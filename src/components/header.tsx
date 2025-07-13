@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import NavDesktop from "@/components/navDesktop";
+import NavDesktop from '@/components/navDesktop';
 
 const Header = () => {
   return (
@@ -14,7 +14,6 @@ const Header = () => {
         {/* desktop nav */}
         <div className="hidden lg:flex items-center gap-8">
           <NavDesktop />
-          <Link href="/contact">Contact me</Link>
         </div>
 
         {/* mobile nav */}
