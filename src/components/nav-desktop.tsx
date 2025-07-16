@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export const links = [
   {
@@ -9,21 +9,21 @@ export const links = [
     path: "/",
   },
   {
-    name: "about",
-    path: "/about",
+    name: "resume",
+    path: "/resume",
   },
   //   {
   //     name: "projects",
   //     path: "/projects",
   //   },
   //   {
-  //     name: "resume",
-  //     path: "/resume",
+  //     name: "blog",
+  //     path: "/blog",
   //   },
-  //   {
-  //     name: "contact",
-  //     path: "/contact",
-  //   },
+  {
+    name: "contact",
+    path: "/contact",
+  },
 ];
 
 const NavDesktop = () => {

@@ -3,7 +3,11 @@
   "ignorePaths": [],
   "dictionaryDefinitions": [],
   "dictionaries": [],
-  "words": ["turbopack", "vercel"],
+  "words": [
+    "jayhuich",
+    "turbopack",
+    "vercel"
+  ],
   "ignoreWords": [],
   "import": []
 }

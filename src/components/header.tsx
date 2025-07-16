@@ -1,14 +1,14 @@
 import Link from 'next/link';
 
-import NavDesktop from '@/components/navDesktop';
+import NavDesktop from '@/components/nav-desktop';
 
-const Header = () => {
+export default function Header() {
   return (
     <header className="py-8 xl:py-12">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
-          <h1 className="text-4xl font-semibold">Jay Hui</h1>
+          <h1 className="text-4xl font-semibold">jay&apos;s site</h1>
         </Link>
 
         {/* desktop nav */}
@@ -21,6 +21,4 @@ const Header = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}
