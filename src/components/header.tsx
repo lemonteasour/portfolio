@@ -12,12 +12,12 @@ export default function Header() {
         </Link>
 
         {/* desktop nav */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8">
           <NavDesktop />
         </div>
 
         {/* mobile nav */}
-        <div className="lg:hidden">{/* TODO: <NavMobile /> */}</div>
+        <div className="md:hidden">{/* TODO: <NavMobile /> */}</div>
       </div>
     </header>
   );
