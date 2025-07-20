@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <div className="py-6">
-      <div className="fixed mx-auto w-[120px] inset-x-0">
+      <div className="absolute mx-auto w-[120px] inset-x-0">
         <Image
           className="rounded-full"
           src="/portrait.png"
