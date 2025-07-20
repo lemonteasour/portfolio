@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   const content = [
     "Hi, I'm Jay — a software engineer from Hong Kong, based in Tokyo, Japan.",
@@ -18,8 +20,20 @@ export default function Home() {
 
   return (
     <div className="py-6">
-      <h1 className="text-3xl font-bold mt-8 mb-4 text-center">Welcome!</h1>
-      <div className="px-5">{map}</div>
+      <div className="fixed mx-auto w-[120px] inset-x-0">
+        <Image
+          className="rounded-full"
+          src="/portrait.png"
+          alt="Portrait photo"
+          width={120}
+          height={120}
+          priority
+        />
+      </div>
+      <div className="border border-gray-200 dark:border-gray-600 rounded-lg mt-20 px-6">
+        <h1 className="text-3xl font-bold mt-12 mb-4 text-center">Welcome!</h1>
+        {map}
+      </div>
     </div>
   );
 }

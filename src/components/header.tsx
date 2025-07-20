@@ -8,7 +8,7 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
-          <h1 className="text-4xl font-semibold">jay&apos;s site</h1>
+          <h1 className="text-4xl font-semibold">jayhuich</h1>
         </Link>
 
         {/* desktop nav */}

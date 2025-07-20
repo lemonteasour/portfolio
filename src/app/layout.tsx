@@ -2,24 +2,18 @@ import type { Metadata } from "next";
 import './globals.css';
 
 import { ThemeProvider } from 'next-themes';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Noto_Sans } from 'next/font/google';
 
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 import ThemeSwitcher from '@/components/theme-switcher';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const notoSans = Noto_Sans({
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "jay",
+  title: "jayhuich",
   description: "jay's portfolio website",
 };
 
@@ -31,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-gray-800 text-gray-900 dark:text-white`}
+        className={`${notoSans.className} antialiased bg-white dark:bg-gray-800 text-gray-900 dark:text-white`}
       >
         <ThemeProvider
           attribute="data-mode"
@@ -39,7 +33,7 @@ export default function RootLayout({
           themes={["light", "dark"]}
           storageKey="theme"
         >
-          <div className="flex flex-col min-h-screen max-w-screen-lg mx-auto px-12 text-sm">
+          <div className="flex flex-col min-h-screen max-w-screen-lg mx-auto px-6 md:px-12 text-sm">
             <Header />
             {children}
             <Footer />
