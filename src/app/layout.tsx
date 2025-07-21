@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import './globals.css';
 
+import { getLocale } from 'next-intl/server';
 import { ThemeProvider } from 'next-themes';
 import { Noto_Sans } from 'next/font/google';
 
 import Footer from '@/components/footer';
 import Header from '@/components/header';
+import LocaleSwitcher from '@/components/locale-switcher';
 import ThemeSwitcher from '@/components/theme-switcher';
 
 const notoSans = Noto_Sans({
@@ -17,13 +19,15 @@ export const metadata: Metadata = {
   description: "jay's portfolio website",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={`${notoSans.className} antialiased bg-white dark:bg-gray-800 text-gray-900 dark:text-white`}
       >
@@ -38,6 +42,7 @@ export default function RootLayout({
           <Footer />
 
           <ThemeSwitcher />
+          <LocaleSwitcher />
         </ThemeProvider>
       </body>
     </html>

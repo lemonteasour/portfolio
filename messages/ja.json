@@ -1,0 +1,20 @@
+{
+    "navigation": {
+        "home": "ホーム",
+        "resume": "履歴",
+        "contact": "連絡先"
+    },
+    "home": {
+        "title": "こんにちは！",
+        "introduction": {
+            "hi": "Hi, I'm Jay — a software engineer from Hong Kong, based in Tokyo, Japan.",
+            "ios": "I build intuitive, user-friendly iOS applications using Swift and modern Apple frameworks, with a focus on creating smooth, elegant, and thoughtful experiences.",
+            "web": "Previously, I worked as a front-end web developer using React and TypeScript — a background that continues to shape how I think about structure, responsiveness, and design systems, now in the mobile space.",
+            "loves": "Beyond the screen, I'm someone who loves language, culture, and creativity.",
+            "language": "I speak four languages — Cantonese, English, Mandarin and Japanese — and I enjoy working with people from diverse cultural and linguistic backgrounds. It's part of what makes collaboration feel both meaningful and natural to me.",
+            "travel": "I've also explored 13 countries and visited 33 of Japan's 47 prefectures, driven by a love for culture and curiosity.",
+            "music": "In my spare time, I turn to music. I play the piano and bass, and I occasionally transcribe or arrange songs just for fun.",
+            "now": "Right now, I'm continuing to grow as a developer, collaborate on meaningful projects, and stay curious about the world — both online and off."
+        }
+    }
+}

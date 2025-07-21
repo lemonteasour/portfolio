@@ -5,9 +5,14 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { LuMenu, LuX } from 'react-icons/lu';
 
-import { routes } from '@/constants/routes';
+import { Route } from '@/constants/routes';
 
-export default function NavMobile() {
+type Props = {
+  routes: Route[];
+};
+
+export default function NavMobile(props: Props) {
+  const { routes } = props;
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 

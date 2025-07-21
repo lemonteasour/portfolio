@@ -3,22 +3,28 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import { routes } from '@/constants/routes';
+import { Route } from '@/constants/routes';
 
-export default function NavDesktop() {
+type Props = {
+  routes: Route[];
+};
+
+export default function NavDesktop(props: Props) {
+  const { routes } = props;
   const pathname = usePathname();
+
   return (
     <nav className="container flex gap-8">
-      {routes.map((link, index) => {
+      {routes.map((route, i) => {
         return (
           <Link
-            href={link.path}
-            key={index}
+            href={route.path}
+            key={i}
             className={`${
-              pathname === link.path && "text-accent border-b-2 border-accent"
+              pathname === route.path && "text-accent border-b-2 border-accent"
             } font-medium hover:text-accent transition-all`}
           >
-            {link.name}
+            {route.name}
           </Link>
         );
       })}

@@ -1,10 +1,15 @@
-export const routes = [
+export type Route = {
+  name: string;
+  path: string;
+};
+
+export const routes: Route[] = [
   {
-    name: "Home",
+    name: "home",
     path: "/",
   },
   {
-    name: "Resume",
+    name: "resume",
     path: "/resume",
   },
   //   {
@@ -16,7 +21,7 @@ export const routes = [
   //     path: "/blog",
   //   },
   {
-    name: "Contact",
+    name: "contact",
     path: "/contact",
   },
 ];
