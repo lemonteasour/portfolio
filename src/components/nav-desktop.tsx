@@ -3,34 +3,13 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-export const links = [
-  {
-    name: "Home",
-    path: "/",
-  },
-  {
-    name: "Resume",
-    path: "/resume",
-  },
-  //   {
-  //     name: "Projects",
-  //     path: "/projects",
-  //   },
-  //   {
-  //     name: "Blog",
-  //     path: "/blog",
-  //   },
-  {
-    name: "Contact",
-    path: "/contact",
-  },
-];
+import { routes } from '@/constants/routes';
 
-const NavDesktop = () => {
+export default function NavDesktop() {
   const pathname = usePathname();
   return (
-    <nav className="flex gap-8">
-      {links.map((link, index) => {
+    <nav className="container flex gap-8">
+      {routes.map((link, index) => {
         return (
           <Link
             href={link.path}
@@ -45,6 +24,4 @@ const NavDesktop = () => {
       })}
     </nav>
   );
-};
-
-export default NavDesktop;
+}

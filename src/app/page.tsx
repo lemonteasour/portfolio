@@ -19,8 +19,8 @@ export default function Home() {
   ));
 
   return (
-    <div className="py-6">
-      <div className="absolute mx-auto w-[120px] inset-x-0">
+    <div className="w-full max-w-screen-lg mx-auto py-6">
+      <div className="absolute mx-auto w-[120px] inset-x-0 z-0">
         <Image
           className="rounded-full"
           src="/portrait.png"

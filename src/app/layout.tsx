@@ -33,13 +33,11 @@ export default function RootLayout({
           themes={["light", "dark"]}
           storageKey="theme"
         >
-          <div className="flex flex-col min-h-screen max-w-screen-lg mx-auto px-6 md:px-12 text-sm">
-            <Header />
-            {children}
-            <Footer />
+          <Header />
+          <div className="container mx-auto px-6 md:px-12">{children}</div>
+          <Footer />
 
-            <ThemeSwitcher />
-          </div>
+          <ThemeSwitcher />
         </ThemeProvider>
       </body>
     </html>
