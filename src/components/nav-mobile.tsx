@@ -1,11 +1,11 @@
 "use client";
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useState } from 'react';
-import { LuMenu, LuX } from 'react-icons/lu';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { LuMenu, LuX } from "react-icons/lu";
 
-import { Route } from '@/constants/routes';
+import type { Route } from "@/constants/routes";
 
 type Props = {
   routes: Route[];

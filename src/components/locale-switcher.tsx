@@ -1,9 +1,9 @@
 "use client";
 
-import { Locale } from 'next-intl';
-import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import { LuLanguages } from 'react-icons/lu';
+import { Locale } from "next-intl";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { LuLanguages } from "react-icons/lu";
 
 export default function LocaleSwitcher() {
   const [locale, setLocale] = useState<Locale>("");

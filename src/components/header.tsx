@@ -1,9 +1,9 @@
-import { useTranslations } from 'next-intl';
-import Link from 'next/link';
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
-import NavDesktop from '@/components/nav-desktop';
-import NavMobile from '@/components/nav-mobile';
-import { Route, routes } from '@/constants/routes';
+import NavDesktop from "@/components/nav-desktop";
+import NavMobile from "@/components/nav-mobile";
+import { type Route, routes } from "@/constants/routes";
 
 export default function Header() {
   const t = useTranslations("navigation");

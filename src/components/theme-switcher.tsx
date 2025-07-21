@@ -1,8 +1,8 @@
 "use client";
 
-import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
-import { LuMoon, LuSun } from 'react-icons/lu';
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+import { LuMoon, LuSun } from "react-icons/lu";
 
 export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
