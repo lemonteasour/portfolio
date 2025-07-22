@@ -27,12 +27,12 @@ export default function NavMobile(props: Props) {
       {isOpen && (
         <>
           <div
-            className="fixed w-screen h-screen top-0 left-0 bg-black/50"
+            className="fixed w-screen h-screen z-30 top-0 left-0 bg-black/50"
             onClick={toggleMenu}
           >
             {/* Background shade */}
           </div>
-          <div className="fixed w-2/3 h-full top-0 left-0 flex flex-col gap-8 p-12 bg-gray-200 dark:bg-gray-700">
+          <div className="fixed w-2/3 h-full z-40 top-0 left-0 flex flex-col gap-8 p-12 bg-gray-200 dark:bg-gray-700">
             {routes.map((link, index) => {
               return (
                 <div key={index}>
