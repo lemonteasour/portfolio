@@ -4,6 +4,7 @@ import Link from "next/link";
 import NavDesktop from "@/components/nav-desktop";
 import NavMobile from "@/components/nav-mobile";
 import { type Route, routes } from "@/constants/routes";
+import LocaleSwitcher from "@/components/locale-switcher";
 
 export default function Header() {
   const t = useTranslations("navigation");
@@ -22,7 +23,7 @@ export default function Header() {
           </div>
           {/* Logo */}
           <Link href="/">
-            <h1 className="text-4xl font-semibold">jayhuich</h1>
+            <h1 className="text-3xl font-semibold">/</h1>
           </Link>
         </div>
 
@@ -30,6 +31,7 @@ export default function Header() {
         <div className="hidden md:flex">
           <NavDesktop routes={translatedRoutes} />
         </div>
+        <LocaleSwitcher />
       </div>
       <div className="md:hidden h-20"></div>
     </header>

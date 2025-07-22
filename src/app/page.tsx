@@ -4,20 +4,20 @@ import Image from "next/image";
 export default function Home() {
   const t = useTranslations("home");
 
-  const map = [
+  const messages = [
     "hi",
     "ios",
     "web",
-    "loves",
+    "love",
     "language",
     "travel",
     "music",
-    "now",
-  ].map((key, i) => (
-    <p className="text-base my-6" key={i}>
-      {t(`introduction.${key}`)}
-    </p>
-  ));
+    "current",
+    "focus",
+    "closing",
+  ];
+
+  const focusMessages = ["cert", "japanese", "piano", "ios", "web"];
 
   return (
     <div className="w-full max-w-screen-lg mx-auto py-6">
@@ -31,11 +31,33 @@ export default function Home() {
           priority
         />
       </div>
+
       <div className="border border-gray-200 dark:border-gray-600 rounded-lg mt-20 px-6">
-        <h1 className="text-3xl font-bold mt-12 mb-4 text-center">
+        <h1 className="text-3xl font-bold mt-16 mb-4 text-center">
           {t("title")}
         </h1>
-        {map}
+
+        {messages.map((message, i) => {
+          if (message === "focus") {
+            return (
+              <ul
+                className="list-outside list-disc mx-2 md:mx-4"
+                key={`${message}${i}`}
+              >
+                {focusMessages.map((focus, j) => (
+                  <li className="my-2" key={`${message}${j}`}>
+                    {t(`introduction.focus.${focus}`)}
+                  </li>
+                ))}
+              </ul>
+            );
+          } else
+            return (
+              <p className="my-6" key={`${message}${i}`}>
+                {t(`introduction.${message}`)}
+              </p>
+            );
+        })}
       </div>
     </div>
   );

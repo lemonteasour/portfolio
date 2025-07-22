@@ -7,7 +7,6 @@ import { Noto_Sans } from "next/font/google";
 
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import LocaleSwitcher from "@/components/locale-switcher";
 import ThemeSwitcher from "@/components/theme-switcher";
 
 const notoSans = Noto_Sans({
@@ -42,7 +41,6 @@ export default async function RootLayout({
           <Footer />
 
           <ThemeSwitcher />
-          <LocaleSwitcher />
         </ThemeProvider>
       </body>
     </html>

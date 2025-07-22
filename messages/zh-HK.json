@@ -2,19 +2,29 @@
     "navigation": {
         "home": "主頁",
         "resume": "職歷",
-        "contact": "聯絡"
+        "contact": "聯繫"
     },
     "home": {
         "title": "你好!",
         "introduction": {
-            "hi": "Hi, I'm Jay — a software engineer from Hong Kong, based in Tokyo, Japan.",
-            "ios": "I build intuitive, user-friendly iOS applications using Swift and modern Apple frameworks, with a focus on creating smooth, elegant, and thoughtful experiences.",
-            "web": "Previously, I worked as a front-end web developer using React and TypeScript — a background that continues to shape how I think about structure, responsiveness, and design systems, now in the mobile space.",
-            "loves": "Beyond the screen, I'm someone who loves language, culture, and creativity.",
-            "language": "I speak four languages — Cantonese, English, Mandarin and Japanese — and I enjoy working with people from diverse cultural and linguistic backgrounds. It's part of what makes collaboration feel both meaningful and natural to me.",
-            "travel": "I've also explored 13 countries and visited 33 of Japan's 47 prefectures, driven by a love for culture and curiosity.",
-            "music": "In my spare time, I turn to music. I play the piano and bass, and I occasionally transcribe or arrange songs just for fun.",
-            "now": "Right now, I'm continuing to grow as a developer, collaborate on meaningful projects, and stay curious about the world — both online and off."
+            "hi": "你好！我叫 Jay，是一位來自香港、現居東京的軟件工程師。",
+            "ios": "我現在工作上主要使用 Swift 開發 iOS 應用程式，致力於打造順暢和細緻的用戶體驗。",
+            "web": "此外，我亦有前端網頁開發的工作經驗，主要使用 TypeScript React 。這段工作經驗對我在開發手機程式時的思考方式亦有很大幫助。",
+            "love": "除了寫程式，我也很喜歡接觸不同的語言、文化和音樂。",
+            "language": "我會說四種語言：廣東話（粵語）、英語、普通話和日語，並且擁有與來自不同文化和語言背景的人合作的經驗。",
+            "travel": "到目前為止，我已經造訪過 13 個國家，也深入探索了日本 47 個都道府縣中的 33 個。每當去到新的地方，我總是盡力去理解當地的文化與生活方式，這是我旅行中最享受的部分。",
+            "music": "閒暇時，我會彈鋼琴和貝斯，有時也會為喜歡的歌曲編寫或改編樂譜。",
+            "current": "目前，我正在專注：",
+            "focus": {
+                "cert": "為基本情報技術者試驗作準備",
+                "japanese": "提升日語能力，以更自在地應對生活與職場需求",
+                "piano": "定期練習鋼琴，有空的時候也可能會改編樂譜",
+                "ios": "深入學習 Swift、SwiftUI 和 UIKit，提升 iOS 開發能力",
+                "web": "利用 Next.js 繼續深造網頁開發"
+            },
+            "closing": "如果你有興趣合作，或只是想聊聊，隨時歡迎聯繫我！"
         }
-    }
+    },
+    "resume": {},
+    "contact": {}
 }

@@ -8,13 +8,23 @@
         "title": "Hello!",
         "introduction": {
             "hi": "Hi, I'm Jay — a software engineer from Hong Kong, based in Tokyo, Japan.",
-            "ios": "I build intuitive, user-friendly iOS applications using Swift and modern Apple frameworks, with a focus on creating smooth, elegant, and thoughtful experiences.",
+            "ios": "I build intuitive, user-friendly iOS applications using Swift and modern Apple frameworks, with a focus on creating smooth, elegant, and thoughtful user experiences.",
             "web": "Previously, I worked as a front-end web developer using React and TypeScript — a background that continues to shape how I think about structure, responsiveness, and design systems, now in the mobile space.",
-            "loves": "Beyond the screen, I'm someone who loves language, culture, and creativity.",
+            "love": "Beyond the screen, I'm someone who loves language, culture, and creativity.",
             "language": "I speak four languages — Cantonese, English, Mandarin and Japanese — and I enjoy working with people from diverse cultural and linguistic backgrounds. It's part of what makes collaboration feel both meaningful and natural to me.",
             "travel": "I've also explored 13 countries and visited 33 of Japan's 47 prefectures, driven by a love for culture and curiosity.",
             "music": "In my spare time, I turn to music. I play the piano and bass, and I occasionally transcribe or arrange songs just for fun.",
-            "now": "Right now, I'm continuing to grow as a developer, collaborate on meaningful projects, and stay curious about the world — both online and off."
+            "current": "I'm currently focusing on:",
+            "focus": {
+                "cert": "Studying for the Fundamental Information Technology Engineer Examination (基本情報技術者試験)",
+                "japanese": "Improving my Japanese for both daily life and professional fluency",
+                "piano": "Practicing piano regularly and arranging songs occasionally",
+                "ios": "Deepening my iOS development skills with Swift, SwiftUI, and UIKit",
+                "web": "Continuing to explore web development with Next.js to stay sharp with frontend trends"
+            },
+            "closing": "I'm always open to new ideas and fun conversations — feel free to reach out!"
         }
-    }
+    },
+    "resume": {},
+    "contact": {}
 }

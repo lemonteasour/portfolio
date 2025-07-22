@@ -1,12 +1,12 @@
 "use client";
 
 import { Locale } from "next-intl";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { LuLanguages } from "react-icons/lu";
 
 export default function LocaleSwitcher() {
-  const [locale, setLocale] = useState<Locale>("");
+  const [locale, setLocale] = useState<Locale>("en");
   const router = useRouter();
 
   const changeLocale = (newLocale: Locale) => {
@@ -34,11 +34,20 @@ export default function LocaleSwitcher() {
   }, [router]);
 
   return (
-    <button
-      className="fixed bottom-20 right-5 w-10 h-10 bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-120 active:scale-100 transition-all bg-gray-800 dark:bg-white text-white dark:text-gray-800"
-      onClick={toggleLocale}
-    >
-      <LuLanguages />
-    </button>
+    <div className="w-8 h-6">
+      <button
+        className="absolute w-8 h-6 backdrop-blur-[0.5rem] shadow-2xl rounded-md hover:scale-120 active:scale-100 transition-all border border-opacity-40 border-gray-800 dark:border-white"
+        onClick={toggleLocale}
+      >
+        <Image
+          className="rounded-md"
+          src={`/flags/flag_${locale}.svg`}
+          alt="Locale flag"
+          fill
+          style={{ objectFit: "cover" }}
+          priority
+        />
+      </button>
+    </div>
   );
 }

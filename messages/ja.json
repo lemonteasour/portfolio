@@ -1,20 +1,30 @@
 {
     "navigation": {
-        "home": "ホーム",
-        "resume": "履歴",
-        "contact": "連絡先"
+        "home": "トップ",
+        "resume": "経歴",
+        "contact": "お問い合わせ"
     },
     "home": {
         "title": "こんにちは！",
         "introduction": {
-            "hi": "Hi, I'm Jay — a software engineer from Hong Kong, based in Tokyo, Japan.",
-            "ios": "I build intuitive, user-friendly iOS applications using Swift and modern Apple frameworks, with a focus on creating smooth, elegant, and thoughtful experiences.",
-            "web": "Previously, I worked as a front-end web developer using React and TypeScript — a background that continues to shape how I think about structure, responsiveness, and design systems, now in the mobile space.",
-            "loves": "Beyond the screen, I'm someone who loves language, culture, and creativity.",
-            "language": "I speak four languages — Cantonese, English, Mandarin and Japanese — and I enjoy working with people from diverse cultural and linguistic backgrounds. It's part of what makes collaboration feel both meaningful and natural to me.",
-            "travel": "I've also explored 13 countries and visited 33 of Japan's 47 prefectures, driven by a love for culture and curiosity.",
-            "music": "In my spare time, I turn to music. I play the piano and bass, and I occasionally transcribe or arrange songs just for fun.",
-            "now": "Right now, I'm continuing to grow as a developer, collaborate on meaningful projects, and stay curious about the world — both online and off."
+            "hi": "初めまして、Jayです！香港出身の、東京を拠点に活動しているソフトウェアエンジニアです。",
+            "ios": "現在は主にSwiftと最新のAppleフレームワークを使ってiOSアプリを開発しており、スムーズで使いやすいユーザー体験の実現を目指しています。",
+            "web": "以前はReact・TypeScriptを使ったフロントエンド開発に携わっており、その経験は現在のモバイル開発においても、構造設計やレスポンシブ対応、デザインシステムの考え方に活かされています。",
+            "love": "プログラミング以外では、語学学習や旅行、楽器演奏などを趣味としています。",
+            "language": "語学学習に関しては、広東語、英語、日本語、中国語の4言語を話し、今後も様々な言語を学んでいきたいと考えています。言語を用いて、異なる文化的背景を持つ人々との交流を楽しんでいます。",
+            "travel": "これまでに13ヶ国を旅し、日本国内では47都道府県のうち33ヶ所を巡ってきました。新しい土地に行くたびに、その地域の文化や暮らし、美しい景色に触れるのが何よりの楽しみです。",
+            "music": "空いた時間には音楽に癒やされています。休日は、ピアノやベースを演奏し、楽譜のアレンジや耳コピでの演奏も楽しんでいます。",
+            "current": "最近は、以下のようなことに力を入れています：",
+            "focus": {
+                "cert": "基本情報技術者試験の勉強",
+                "japanese": "日常生活と仕事の両方で使える日本語力の向上",
+                "piano": "定期的なピアノ練習とアレンジや楽譜制作",
+                "ios": "Swift・UIKit・SwiftUIを使ったiOS開発スキルの向上",
+                "web": "Next.jsでのWeb開発"
+            },
+            "closing": "新しいアイデアや何気ないおしゃべりも大歓迎です。お気軽にご連絡ください！"
         }
-    }
+    },
+    "resume": {},
+    "contact": {}
 }
