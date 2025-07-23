@@ -20,10 +20,10 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      className="fixed bottom-5 right-5 w-10 h-10 bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-120 active:scale-100 transition-all bg-gray-800 dark:bg-white text-white dark:text-gray-800"
+      className="w-8 flex items-center justify-center hover:scale-120 active:scale-100 transition-all text-gray-800 dark:text-white"
       onClick={toggleTheme}
     >
-      {theme === "light" ? <LuSun /> : <LuMoon />}
+      {theme === "light" ? <LuSun size={20} /> : <LuMoon size={20} />}
     </button>
   );
 }

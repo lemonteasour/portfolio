@@ -39,8 +39,6 @@ export default async function RootLayout({
           <Header />
           <div className="container mx-auto px-6 md:px-12">{children}</div>
           <Footer />
-
-          <ThemeSwitcher />
         </ThemeProvider>
       </body>
     </html>

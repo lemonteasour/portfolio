@@ -36,7 +36,7 @@ export default function LocaleSwitcher() {
   return (
     <div className="w-8 h-6">
       <button
-        className="absolute w-8 h-6 backdrop-blur-[0.5rem] shadow-2xl rounded-md hover:scale-120 active:scale-100 transition-all border border-opacity-40 border-gray-800 dark:border-white bg-gray-800 dark:bg-white"
+        className="absolute w-8 h-6 rounded-md hover:scale-120 active:scale-100 transition-all border border-gray-800 dark:border-white bg-gray-800 dark:bg-white"
         onClick={toggleLocale}
       >
         <Image
