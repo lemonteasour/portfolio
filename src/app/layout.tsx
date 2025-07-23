@@ -7,7 +7,6 @@ import { Noto_Sans } from "next/font/google";
 
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import ThemeSwitcher from "@/components/theme-switcher";
 
 const notoSans = Noto_Sans({
   subsets: ["latin"],
