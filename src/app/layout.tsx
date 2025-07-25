@@ -27,7 +27,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${notoSans.className} antialiased bg-white dark:bg-gray-800 text-gray-900 dark:text-white`}
+        className={`${notoSans.className} antialiased bg-gray-100 dark:bg-gray-900 text-black dark:text-white`}
       >
         <ThemeProvider
           attribute="data-mode"

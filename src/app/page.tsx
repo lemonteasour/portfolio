@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   const t = useTranslations("home");
 
-  const messages = [
+  const introductionKeys = [
     "hi",
     "ios",
     "web",
@@ -15,13 +15,13 @@ export default function Home() {
     "current",
     "focus",
     "closing",
-  ];
+  ] as const;
 
-  const focusMessages = ["cert", "japanese", "piano", "ios", "web"];
+  const focusKeys = ["cert", "japanese", "piano", "ios", "web"] as const;
 
   return (
     <div className="w-full max-w-screen-lg mx-auto py-6">
-      <div className="absolute mx-auto w-[120px] inset-x-0 z-0">
+      <div className="absolute size-[130px] mx-auto flex justify-center items-center inset-x-0 z-0 rounded-full bg-gray-200 dark:bg-gray-700">
         <Image
           className="rounded-full"
           src="/portrait.png"
@@ -32,20 +32,20 @@ export default function Home() {
         />
       </div>
 
-      <div className="border border-gray-200 dark:border-gray-600 rounded-lg mt-20 px-6">
-        <h1 className="text-3xl font-bold mt-16 mb-4 text-center">
+      <div className="rounded-lg mt-20 p-6 md:p-8 bg-white dark:bg-gray-800">
+        <h1 className="text-3xl font-bold mt-8 mb-4 text-center">
           {t("title")}
         </h1>
 
-        {messages.map((message, i) => {
-          if (message === "focus") {
+        {introductionKeys.map((intro) => {
+          if (intro === "focus") {
             return (
               <ul
                 className="list-outside list-disc mx-2 md:mx-4"
-                key={`${message}${i}`}
+                key={`${intro}`}
               >
-                {focusMessages.map((focus, j) => (
-                  <li className="my-2" key={`${message}${j}`}>
+                {focusKeys.map((focus) => (
+                  <li className="my-2" key={`${intro}${focus}`}>
                     {t(`introduction.focus.${focus}`)}
                   </li>
                 ))}
@@ -53,8 +53,8 @@ export default function Home() {
             );
           } else
             return (
-              <p className="my-6" key={`${message}${i}`}>
-                {t(`introduction.${message}`)}
+              <p className="my-6" key={`${intro}`}>
+                {t(`introduction.${intro}`)}
               </p>
             );
         })}

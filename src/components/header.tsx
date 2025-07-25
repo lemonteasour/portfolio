@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="w-full fixed md:static flex justify-between items-center px-6 md:px-12 py-6 md:py-8 z-20 bg-gray-100 dark:bg-gray-900">
+      <div className="w-full fixed md:static flex justify-between items-center px-6 md:px-12 py-6 md:py-8 z-20 bg-white dark:bg-gray-800">
         <div className="flex gap-8">
           {/* Mobile nav */}
           <div className="md:hidden my-auto">

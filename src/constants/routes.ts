@@ -9,15 +9,15 @@ export const routes: Route[] = [
     path: "/",
   },
   {
-    name: "resume",
-    path: "/resume",
+    name: "experiences",
+    path: "/experiences",
   },
   //   {
-  //     name: "Projects",
+  //     name: "projects",
   //     path: "/projects",
   //   },
   //   {
-  //     name: "Blog",
+  //     name: "blog",
   //     path: "/blog",
   //   },
   {

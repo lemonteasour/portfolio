@@ -1,7 +1,7 @@
 {
     "navigation": {
         "home": "トップ",
-        "resume": "経歴",
+        "experiences": "経歴",
         "contact": "お問い合わせ"
     },
     "home": {
@@ -25,6 +25,10 @@
             "closing": "新しいアイデアや何気ないおしゃべりも大歓迎です。お気軽にご連絡ください！"
         }
     },
-    "resume": {},
-    "contact": {}
+    "experiences": {
+        "title": "経歴"
+    },
+    "contact": {
+        "title": "お問い合わせ"
+    }
 }

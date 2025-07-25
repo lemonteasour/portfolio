@@ -1,7 +1,7 @@
 {
     "navigation": {
         "home": "Home",
-        "resume": "Resume",
+        "experiences": "Experiences",
         "contact": "Contact"
     },
     "home": {
@@ -25,6 +25,10 @@
             "closing": "I'm always open to new ideas and fun conversations — feel free to reach out!"
         }
     },
-    "resume": {},
-    "contact": {}
+    "experiences": {
+        "title": "Experiences"
+    },
+    "contact": {
+        "title": "Contact"
+    }
 }

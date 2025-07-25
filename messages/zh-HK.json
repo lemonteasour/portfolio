@@ -1,7 +1,7 @@
 {
     "navigation": {
         "home": "主頁",
-        "resume": "職歷",
+        "experiences": "職歷",
         "contact": "聯繫"
     },
     "home": {
@@ -25,6 +25,10 @@
             "closing": "如果你有興趣合作，或只是想聊聊，隨時歡迎聯繫我！"
         }
     },
-    "resume": {},
-    "contact": {}
+    "experiences": {
+        "title": "職歷"
+    },
+    "contact": {
+        "title": "聯繫"
+    }
 }
