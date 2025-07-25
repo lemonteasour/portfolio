@@ -26,7 +26,36 @@
         }
     },
     "experiences": {
-        "title": "職歷"
+        "title": "職歷",
+        "fulltime": {
+            "title": "Full-time",
+            "rakuten": {
+                "company": "樂天",
+                "period": "2023年 4月 - 現在",
+                "location": "日本 東京 世田谷區",
+                "title": "軟件工程師",
+                "description": {
+                    "inbound": "Front-end Web UI development for the Rakuten Travel Inbound website",
+                    "ds": "Creating a unified design system across multiple applications.",
+                    "api": "Collaborating with API team, implementing interfaces for smooth data transfer.",
+                    "pdm": "Helping product managers and UI/UX designers to implement new ideas and features",
+                    "release": "Participating in midnight operations and releases"
+                },
+                "skills": {}
+            },
+            "tomlee": {
+                "company": "通利琴行",
+                "period": "Jul 2022 - Feb 2023",
+                "location": "香港特別行政區 九龍",
+                "title": "網絡工程師",
+                "description": {
+                    "website": "Maintained and implemented new features for the Tom Lee Music online store",
+                    "server": "Managed internal network servers and computer systems",
+                    "adhoc": "Resolved ad-hoc technical requests from colleagues"
+                },
+                "skills": {}
+            }
+        }
     },
     "contact": {
         "title": "聯繫"
