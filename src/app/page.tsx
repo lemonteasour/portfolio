@@ -24,7 +24,7 @@ export default function Home() {
       <div className="absolute size-[130px] mx-auto flex justify-center items-center inset-x-0 z-0 rounded-full bg-gray-200 dark:bg-gray-700">
         <Image
           className="rounded-full"
-          src="/portrait.png"
+          src="/portrait.jpg"
           alt="Portrait photo"
           width={120}
           height={120}
