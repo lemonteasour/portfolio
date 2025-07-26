@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="w-full fixed md:static flex justify-between items-center px-6 md:px-12 py-6 md:py-8 z-20 bg-white dark:bg-gray-800">
+      <div className="w-full fixed flex justify-between items-center px-6 md:px-12 py-6 md:py-8 z-20 border-b-2 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
         <div className="flex gap-8">
           {/* Mobile nav */}
           <div className="md:hidden my-auto">
@@ -42,7 +42,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="md:hidden h-20"></div>
+      <div className="h-24"></div>
     </header>
   );
 }
