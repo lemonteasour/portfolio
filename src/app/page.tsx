@@ -1,23 +1,23 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
+const introductionKeys = [
+  "hi",
+  "ios",
+  "web",
+  "love",
+  "language",
+  "travel",
+  "music",
+  "current",
+  "focus",
+  "closing",
+] as const;
+
+const focusKeys = ["cert", "japanese", "piano", "ios", "web"] as const;
+
 export default function Home() {
   const t = useTranslations("home");
-
-  const introductionKeys = [
-    "hi",
-    "ios",
-    "web",
-    "love",
-    "language",
-    "travel",
-    "music",
-    "current",
-    "focus",
-    "closing",
-  ] as const;
-
-  const focusKeys = ["cert", "japanese", "piano", "ios", "web"] as const;
 
   return (
     <div className="w-full max-w-screen-lg mx-auto py-6">

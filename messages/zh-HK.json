@@ -34,24 +34,34 @@
                 "period": "2023年 4月 - 現在",
                 "location": "日本 東京 世田谷區",
                 "title": "軟件工程師",
-                "description": {
-                    "inbound": "Front-end Web UI development for the Rakuten Travel Inbound website",
-                    "ds": "Creating a unified design system across multiple applications.",
-                    "api": "Collaborating with API team, implementing interfaces for smooth data transfer.",
-                    "pdm": "Helping product managers and UI/UX designers to implement new ideas and features",
-                    "release": "Participating in midnight operations and releases"
+                "ios": {
+                    "title": "iOS Team",
+                    "description": {
+                        "tbu": "最近轉入 iOS 團隊，目前正開始努力開發手機應用程式。敬請期待！"
+                    },
+                    "skills": {}
                 },
-                "skills": {}
+                "ui": {
+                    "title": "UI Team",
+                    "description": {
+                        "inbound": "擔任樂天旅遊海外網站的前端工程師",
+                        "ds": "打造了一個在多個應用程式中共用的統一設計系統",
+                        "rtl": "主導將過時的 Enzyme 單元測試遷移至 React Testing Library 的專案",
+                        "release": "參與深夜系統操作與版本發佈作業",
+                        "olt": "為因應大量伺服器流量，執行系統負載測試"
+                    },
+                    "skills": {}
+                }
             },
             "tomlee": {
                 "company": "通利琴行",
-                "period": "Jul 2022 - Feb 2023",
+                "period": "2022年 7月 - 2023年 2月",
                 "location": "香港特別行政區 九龍",
                 "title": "網絡工程師",
                 "description": {
-                    "website": "Maintained and implemented new features for the Tom Lee Music online store",
-                    "server": "Managed internal network servers and computer systems",
-                    "adhoc": "Resolved ad-hoc technical requests from colleagues"
+                    "website": "維護並開發通利琴行線上商店的新功能",
+                    "server": "管理內部網路伺服器及電腦系統",
+                    "adhoc": "處理同事提出的臨時技術支援需求"
                 },
                 "skills": {}
             }

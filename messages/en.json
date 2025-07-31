@@ -20,7 +20,7 @@
                 "japanese": "Improving my Japanese for both daily life and professional fluency",
                 "piano": "Practicing piano regularly and arranging songs occasionally",
                 "ios": "Deepening my iOS development skills with Swift, SwiftUI, and UIKit",
-                "web": "Continuing to explore web development with Next.js to stay sharp with frontend trends"
+                "web": "Continuing to explore web development with Next.js to stay sharp with front-end trends"
             },
             "closing": "I'm always open to new ideas and fun conversations — feel free to reach out!"
         }
@@ -32,16 +32,26 @@
             "rakuten": {
                 "company": "Rakuten Group Inc.",
                 "period": "Apr 2023 - Present",
-                "location": "Tokyo, Japan",
+                "location": "Setagaya, Tokyo, Japan",
                 "title": "Applications Engineer",
-                "description": {
-                    "inbound": "Front-end Web UI development for the Rakuten Travel Inbound website",
-                    "ds": "Creating a unified design system across multiple applications.",
-                    "api": "Collaborating with API team, implementing interfaces for smooth data transfer.",
-                    "pdm": "Helping product managers and UI/UX designers to implement new ideas and features",
-                    "release": "Participating in midnight operations and releases"
+                "ios": {
+                    "title": "iOS Team",
+                    "description": {
+                        "tbu": "Recently transitioned into the iOS team, where I'm beginning to contribute to app development. More updates soon!"
+                    },
+                    "skills": {}
                 },
-                "skills": {}
+                "ui": {
+                    "title": "UI Team",
+                    "description": {
+                        "inbound": "Worked as a front-end web developer for the Rakuten Travel Inbound website",
+                        "ds": "Created a unified design system used across multiple applications",
+                        "rtl": "Led a project to convert outdated enzyme unit tests to React Testing Library",
+                        "release": "Participated in midnight operations and releases",
+                        "olt": "Performed load tests on the system to prepare for heavy server traffic"
+                    },
+                    "skills": {}
+                }
             },
             "tomlee": {
                 "company": "Tom Lee Music Hong Kong",

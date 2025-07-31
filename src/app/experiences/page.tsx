@@ -1,18 +1,18 @@
 import { useTranslations } from "next-intl";
 import ExperienceCard from "./experience-card";
 
-type JobKey = { name: string; description: string[] };
+const fulltimeKeys = [
+  {
+    name: "rakuten",
+  },
+  {
+    name: "tomlee",
+    description: ["website", "server", "adhoc"],
+  },
+];
 
 export default function Experiences() {
   const t = useTranslations("experiences");
-
-  const fulltimeKeys: JobKey[] = [
-    {
-      name: "rakuten",
-      description: ["inbound", "ds", "api", "pdm", "release"],
-    },
-    { name: "tomlee", description: ["website", "server", "adhoc"] },
-  ] as const;
 
   return (
     <div className="w-full max-w-screen-lg mx-auto py-6">
