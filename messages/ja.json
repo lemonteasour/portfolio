@@ -1,5 +1,6 @@
 {
     "navigation": {
+        "root": "Jay's Portfolio",
         "home": "トップ",
         "experiences": "経歴",
         "contact": "お問い合わせ"
@@ -65,7 +66,7 @@
         }
     },
     "contact": {
-        "title": "Let's get in touch!",
-        "subtitle": "Whether you want to talk about projects, music, travel, or just say hi - I'd love to hear from you!"
+        "title": "お話しできたら嬉しいです！",
+        "subtitle": "興味のあることや、ちょっとした話題でも大歓迎です。気軽にご連絡くださいね！"
     }
 }

@@ -24,7 +24,7 @@ export default function Header() {
           </div>
           {/* Logo */}
           <Link href="/">
-            <h1 className="text-3xl font-semibold">/</h1>
+            <h1 className="text-xl font-semibold">{t("root")}</h1>
           </Link>
         </div>
 

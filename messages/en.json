@@ -1,5 +1,6 @@
 {
     "navigation": {
+        "root": "Jay's Portfolio",
         "home": "Home",
         "experiences": "Experiences",
         "contact": "Contact"
