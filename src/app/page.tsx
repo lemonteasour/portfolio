@@ -1,20 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-const introductionKeys = [
-  "hi",
-  "ios",
-  "web",
-  "love",
-  "language",
-  "travel",
-  "music",
-  "current",
-  "focus",
-  "closing",
-] as const;
-
-const focusKeys = ["cert", "japanese", "piano", "ios", "web"] as const;
+import HomeLabels from "./labels";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -37,14 +24,14 @@ export default function Home() {
           {t("title")}
         </h1>
 
-        {introductionKeys.map((intro) => {
+        {HomeLabels.introduction.map((intro) => {
           if (intro === "focus") {
             return (
               <ul
                 className="list-outside list-disc mx-2 md:mx-4"
                 key={`${intro}`}
               >
-                {focusKeys.map((focus) => (
+                {HomeLabels.focus.map((focus) => (
                   <li className="my-2" key={`${intro}${focus}`}>
                     {t(`introduction.focus.${focus}`)}
                   </li>

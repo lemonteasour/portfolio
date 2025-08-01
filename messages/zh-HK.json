@@ -28,7 +28,7 @@
     "experiences": {
         "title": "職歷",
         "fulltime": {
-            "title": "Full-time",
+            "title": "全職",
             "rakuten": {
                 "company": "樂天",
                 "period": "2023年 4月 - 現在",
@@ -38,8 +38,7 @@
                     "title": "iOS Team",
                     "description": {
                         "tbu": "最近轉入 iOS 團隊，目前正開始努力開發手機應用程式。敬請期待！"
-                    },
-                    "skills": {}
+                    }
                 },
                 "ui": {
                     "title": "UI Team",
@@ -49,8 +48,7 @@
                         "rtl": "主導將過時的 Enzyme 單元測試遷移至 React Testing Library 的專案",
                         "release": "參與深夜系統操作與版本發佈作業",
                         "olt": "為因應大量伺服器流量，執行系統負載測試"
-                    },
-                    "skills": {}
+                    }
                 }
             },
             "tomlee": {
@@ -62,8 +60,7 @@
                     "website": "維護並開發通利琴行線上商店的新功能",
                     "server": "管理內部網路伺服器及電腦系統",
                     "adhoc": "處理同事提出的臨時技術支援需求"
-                },
-                "skills": {}
+                }
             }
         }
     },

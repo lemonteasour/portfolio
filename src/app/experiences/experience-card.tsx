@@ -1,37 +1,45 @@
 import { useTranslations } from "next-intl";
+import ExperiencesLabels from "./labels";
 
 type Props = {
   expKey: string;
   description?: string[];
+  skills?: string[];
   type: string;
 };
 
-const rakutenDescriptions = {
-  ios: ["tbu"],
-  ui: ["inbound", "ds", "rtl", "release", "olt"],
-};
-
 export default function ExperienceCard(props: Props) {
-  const { type, expKey, description } = props;
+  const { type, expKey, description, skills } = props;
   const t = useTranslations(`experiences.${type}.${expKey}`);
 
   const ExperienceCardSection = ({
     section,
     description,
+    skills,
   }: {
     section?: string;
     description: string[];
+    skills: string[];
   }) => {
     return (
-      <div className="text-sm">
+      <div className="flex flex-col gap-2">
         {section && <h4 className="font-semibold">{t(`${section}.title`)}</h4>}
-        <ul className="list-outside list-disc mx-2 md:mx-4">
-          {description.map((key) => (
-            <li className="my-1" key={`${section}${key}`}>
-              {t(`${section ? section + "." : ""}description.${key}`)}
-            </li>
-          ))}
-        </ul>
+        <div className="flex flex-col md:flex-row justify-between gap-2 text-sm">
+          <ul className="flex flex-col md:w-5/6 lg:w-11/12 list-outside list-disc mx-2 md:mx-4">
+            {description.map((key) => (
+              <li className="my-0.5" key={`${section}${key}`}>
+                {t(`${section ? section + "." : ""}description.${key}`)}
+              </li>
+            ))}
+          </ul>
+          <ul className="flex flex-row md:flex-col md:w-1/6 lg:w-1/12 list-outside md:list-disc mx-auto md:mx-4 divide-x md:divide-x-0 text-gray-500 dark:text-gray-400">
+            {skills.map((key) => (
+              <li className="text-xs px-2 md:px-0 my-0.5" key={`${key}`}>
+                {key}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     );
   };
@@ -43,7 +51,7 @@ export default function ExperienceCard(props: Props) {
           <h3 className="text-lg font-semibold">{t("company")}</h3>
           <p>{t("title")}</p>
         </div>
-        <div className="flex flex-col md:items-end text-sm text-gray-500">
+        <div className="flex flex-col md:items-end text-sm text-gray-500 dark:text-gray-400">
           <span>{t("period")}</span>
           <p>{t("location")}</p>
         </div>
@@ -53,15 +61,20 @@ export default function ExperienceCard(props: Props) {
         <>
           <ExperienceCardSection
             section="ios"
-            description={rakutenDescriptions.ios}
+            description={ExperiencesLabels.fulltime.rakuten.ios.description}
+            skills={ExperiencesLabels.fulltime.rakuten.ios.skills}
           />
           <ExperienceCardSection
             section="ui"
-            description={rakutenDescriptions.ui}
+            description={ExperiencesLabels.fulltime.rakuten.ui.description}
+            skills={ExperiencesLabels.fulltime.rakuten.ui.skills}
           />
         </>
       ) : (
-        <ExperienceCardSection description={description || []} />
+        <ExperienceCardSection
+          description={description || []}
+          skills={skills || []}
+        />
       )}
     </div>
   );
