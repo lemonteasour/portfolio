@@ -6,6 +6,7 @@ import NavMobile from "@/components/nav-mobile";
 import { type Route, routes } from "@/constants/routes";
 import LocaleSwitcher from "@/components/locale-switcher";
 import ThemeSwitcher from "@/components/theme-switcher";
+import Image from "next/image";
 
 export default function Header() {
   const t = useTranslations("navigation");
@@ -16,15 +17,27 @@ export default function Header() {
 
   return (
     <header>
-      <div className="w-full fixed flex justify-between items-center px-6 md:px-12 py-6 md:py-8 z-20 border-b-2 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
+      <div className="w-full fixed flex justify-between items-center px-6 md:px-12 py-6 z-20 border-b-2 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
         <div className="flex gap-8">
           {/* Mobile nav */}
           <div className="md:hidden my-auto">
             <NavMobile routes={translatedRoutes} />
           </div>
           {/* Logo */}
-          <Link href="/">
-            <h1 className="text-xl font-semibold">{t("root")}</h1>
+          <Link
+            href="/"
+            className="hover:scale-120 active:scale-100 transition-all"
+          >
+            <div className="relative size-[45px] mx-auto flex justify-center items-center inset-x-0 z-0 rounded-full bg-gray-200 dark:bg-gray-700">
+              <Image
+                className="rounded-full"
+                src="/logo.png"
+                alt="Logo"
+                width={40}
+                height={40}
+                priority
+              />
+            </div>
           </Link>
         </div>
 
