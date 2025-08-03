@@ -30,7 +30,7 @@
         "fulltime": {
             "title": "Full-time",
             "rakuten": {
-                "company": "Rakuten Group Inc.",
+                "name": "Rakuten Group Inc.",
                 "period": "Apr 2023 - Present",
                 "location": "Setagaya, Tokyo, Japan",
                 "title": "Applications Engineer",
@@ -52,7 +52,7 @@
                 }
             },
             "tomlee": {
-                "company": "Tom Lee Music Hong Kong",
+                "name": "Tom Lee Music Hong Kong",
                 "period": "Jul 2022 - Feb 2023",
                 "location": "Kowloon, Hong Kong",
                 "title": "Web Programmer",
@@ -65,24 +65,36 @@
         },
         "intern": {
             "title": "Internships",
-            "itsc": {
-                "company": "",
-                "period": "",
-                "description": ""
-            },
             "aritaone": {
-                "company": "",
-                "period": "",
-                "description": ""
+                "name": "AritaOne Software Ltd.",
+                "period": "Nov 2020 - Dec 2021",
+                "location": "Hong Kong Island, Hong Kong",
+                "description": {
+                    "frontend": "Responsible for designing and implementing Angular web applications for clients, mainly focusing on front-end development"
+                }
             },
             "td": {
-                "company": "",
-                "period": "",
-                "description": ""
+                "name": "Transport Department, HKSAR Government",
+                "period": "Jul 2020 - Aug 2020",
+                "location": "Kowloon, Hong Kong",
+                "description": {
+                    "revamp": "Revamped the divisional website using HTML, Bootstrap and jQuery",
+                    "scheduler": "Developed an operation scheduler system as a web application with Node.js"
+                }
             }
         },
         "education": {
-            "hkust": {}
+            "title": "Education",
+            "hkust": {
+                "name": "The Hong Kong University of Science and Technology",
+                "period": "Sep 2018 - Dec 2022",
+                "location": "New Territories, Hong Kong",
+                "title": "Bachelor of Engineering (BEng)",
+                "description": {
+                    "major": "Major in Computer Engineering",
+                    "minor": "Minor in Humanities (Music)"
+                }
+            }
         }
     },
     "contact": {

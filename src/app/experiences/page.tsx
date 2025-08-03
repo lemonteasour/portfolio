@@ -21,6 +21,31 @@ export default function Experiences() {
         skills={ExperiencesLabels.fulltime.tomlee.skills}
         type={"fulltime"}
       />
+
+      <h2 className="text-xl font-bold mt-8">{t("intern.title")}</h2>
+
+      <ExperienceCard
+        expKey={ExperiencesLabels.intern.aritaone.name}
+        description={ExperiencesLabels.intern.aritaone.description}
+        skills={ExperiencesLabels.intern.aritaone.skills}
+        type={"intern"}
+      />
+
+      <ExperienceCard
+        expKey={ExperiencesLabels.intern.td.name}
+        description={ExperiencesLabels.intern.td.description}
+        skills={ExperiencesLabels.intern.td.skills}
+        type={"intern"}
+      />
+
+      <h2 className="text-xl font-bold mt-8">{t("education.title")}</h2>
+
+      <ExperienceCard
+        expKey={ExperiencesLabels.education.hkust.name}
+        description={ExperiencesLabels.education.hkust.description}
+        skills={ExperiencesLabels.education.hkust.skills}
+        type={"education"}
+      />
     </div>
   );
 }

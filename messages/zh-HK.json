@@ -30,7 +30,7 @@
         "fulltime": {
             "title": "全職",
             "rakuten": {
-                "company": "樂天",
+                "name": "樂天",
                 "period": "2023年 4月 - 現在",
                 "location": "日本 東京 世田谷區",
                 "title": "軟件工程師",
@@ -52,7 +52,7 @@
                 }
             },
             "tomlee": {
-                "company": "通利琴行",
+                "name": "通利琴行",
                 "period": "2022年 7月 - 2023年 2月",
                 "location": "香港特別行政區 九龍",
                 "title": "網絡工程師",
@@ -60,6 +60,39 @@
                     "website": "維護並開發通利琴行線上商店的新功能",
                     "server": "管理內部網路伺服器及電腦系統",
                     "adhoc": "處理同事提出的臨時技術支援需求"
+                }
+            }
+        },
+        "intern": {
+            "title": "實習",
+            "aritaone": {
+                "name": "AritaOne Software Ltd.",
+                "period": "2020年 11月 - 2021年 12月",
+                "location": "香港特別行政區 香港島",
+                "description": {
+                    "frontend": "負責為客戶設計並開發 Angular 網頁應用程式，主要專注於前端開發"
+                }
+            },
+            "td": {
+                "name": "香港特別行政區運輸署",
+                "period": "2020年 7月 - 2020年 8月",
+                "location": "香港特別行政區 九龍",
+                "description": {
+                    "revamp": "使用 HTML、Bootstrap 和 jQuery 重新設計並改造了部門網站",
+                    "scheduler": "以 Node.js 開發了一個排程管理系統的網頁應用程式"
+                }
+            }
+        },
+        "education": {
+            "title": "學位",
+            "hkust": {
+                "name": "香港科技大學",
+                "period": "2018年 9月 - 2022年 12月",
+                "location": "香港特別行政區 新界",
+                "title": "工學士 (BEng)",
+                "description": {
+                    "major": "主修：計算機工程學",
+                    "minor": "副修：人文學（音樂）"
                 }
             }
         }

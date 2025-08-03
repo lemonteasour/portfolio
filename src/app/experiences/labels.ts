@@ -17,6 +17,25 @@ const ExperiencesLabels = {
       skills: ["HTML", "CSS", "PHP", "SQL Server", "Liquid"],
     },
   },
+  intern: {
+    aritaone: {
+      name: "aritaone",
+      description: ["frontend"],
+      skills: ["Angular 8", "TypeScript", "CSS", "MySQL"],
+    },
+    td: {
+      name: "td",
+      description: ["revamp", "scheduler"],
+      skills: ["HTML", "CSS", "jQuery", "Node.js"],
+    },
+  },
+  education: {
+    hkust: {
+      name: "hkust",
+      description: ["major", "minor"],
+      skills: [],
+    },
+  },
 };
 
 export default ExperiencesLabels;

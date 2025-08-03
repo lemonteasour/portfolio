@@ -30,7 +30,7 @@
         "fulltime": {
             "title": "正社員",
             "rakuten": {
-                "company": "楽天グループ 株式会社",
+                "name": "楽天グループ 株式会社",
                 "period": "2023年 4月 〜",
                 "location": "日本 東京都 世田谷区",
                 "title": "アプリケーションエンジニア",
@@ -52,7 +52,7 @@
                 }
             },
             "tomlee": {
-                "company": "Tom Lee Music Hong Kong",
+                "name": "Tom Lee Music Hong Kong",
                 "period": "2022年 7月 〜 2023年 2月",
                 "location": "香港特別行政区 九龍",
                 "title": "ウェブエンジニア",
@@ -60,6 +60,39 @@
                     "website": "オンラインストアのメンテナンスおよび新機能の実装 ",
                     "server": "内部ネットワークサーバーおよびコンピュータシステムの管理",
                     "adhoc": "同僚からの技術的なリクエストへの対応"
+                }
+            }
+        },
+        "intern": {
+            "title": "インターン・アルバイト",
+            "aritaone": {
+                "name": "AritaOne Software Ltd.",
+                "period": "2020年 11月 〜 2021年 12月",
+                "location": "香港特別行政区 香港島",
+                "description": {
+                    "frontend": "フロントエンド開発、クライアント向けの Angular ウェブアプリケーションの設計および実装"
+                }
+            },
+            "td": {
+                "name": "香港特別行政区運輸署",
+                "period": "2020年 7月 〜 2020年 8月",
+                "location": "香港特別行政区 九龍",
+                "description": {
+                    "revamp": "HTML・Bootstrap・jQuery を使った部門ウェブサイトのリニューアル",
+                    "scheduler": "オペレーションスケジューラシステムの Node.js ウェブアプリケーション開発"
+                }
+            }
+        },
+        "education": {
+            "title": "学歴",
+            "hkust": {
+                "name": "香港科技大学",
+                "period": "2018年 9月 〜 2022年 12月",
+                "location": "香港特別行政区 新界",
+                "title": "学士 (工学)",
+                "description": {
+                    "major": "専攻：コンピューター工学",
+                    "minor": "副専攻：人文学（音楽）"
                 }
             }
         }
