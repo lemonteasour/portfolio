@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 import {
   LuGithub,
   LuInstagram,
@@ -17,52 +18,52 @@ export default function Contact() {
         <h1 className="text-3xl font-bold my-4 text-center">{t("title")}</h1>
         <p className="text-center">{t("subtitle")}</p>
         <div className="flex flex-row mt-6 justify-center gap-4">
-          <a
+          <Link
             href="mailto:jayhuich@gmail.com"
             className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
           >
             <LuMail size={30} />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://linkedin.com/in/jayhuich"
             target="_blank"
             className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
           >
             <LuLinkedin size={30} />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://github.com/jayhuich"
             target="_blank"
             className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
           >
             <LuGithub size={30} />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://discordapp.com/users/jayhuich"
             target="_blank"
             className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
           >
             <RiDiscordLine size={30} />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://instagram.com/jayhuich"
             target="_blank"
             className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
           >
             <LuInstagram size={30} />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://www.youtube.com/@jayhuich"
             target="_blank"
             className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
           >
             <LuYoutube size={30} />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
