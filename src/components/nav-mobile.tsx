@@ -32,7 +32,7 @@ export default function NavMobile(props: Props) {
           >
             {/* Background shade */}
           </div>
-          <div className="fixed w-2/3 h-full z-40 top-0 left-0 flex flex-col gap-8 p-12 bg-white dark:bg-gray-800">
+          <div className="fixed w-2/3 h-full z-40 top-0 left-0 flex flex-col gap-8 p-12 bg-white dark:bg-neutral-800">
             {routes.map((link, index) => {
               return (
                 <div key={index}>

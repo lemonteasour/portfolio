@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <div className="w-full max-w-screen-lg mx-auto py-6">
-      <div className="absolute size-[130px] mx-auto flex justify-center items-center inset-x-0 z-0 rounded-full bg-gray-200 dark:bg-gray-700">
+      <div className="absolute size-[130px] mx-auto flex justify-center items-center inset-x-0 z-0 rounded-full bg-neutral-200 dark:bg-neutral-700">
         <Image
           className="rounded-full"
           src="/portrait.jpg"
@@ -19,7 +19,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="rounded-lg mt-20 p-6 md:p-8 bg-white dark:bg-gray-800">
+      <div className="rounded-lg mt-20 p-6 md:p-8 bg-white dark:bg-neutral-800">
         <h1 className="text-3xl font-bold mt-8 mb-4 text-center">
           {t("title")}
         </h1>
