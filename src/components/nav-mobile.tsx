@@ -39,10 +39,7 @@ export default function NavMobile(props: Props) {
                   <Link
                     onClick={toggleMenu}
                     href={link.path}
-                    className={`${
-                      pathname === link.path &&
-                      "text-accent border-b-2 border-accent"
-                    } font-medium hover:text-accent transition-all`}
+                    className={`${pathname === link.path && "font-bold"}`}
                   >
                     {link.name}
                   </Link>

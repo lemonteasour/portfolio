@@ -30,7 +30,7 @@ export default async function RootLayout({
         className={`${notoSans.className} antialiased bg-neutral-100 dark:bg-neutral-900 text-black dark:text-white`}
       >
         <ThemeProvider
-          attribute="data-mode"
+          attribute="class"
           defaultTheme="light"
           themes={["light", "dark"]}
           storageKey="theme"

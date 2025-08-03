@@ -20,9 +20,7 @@ export default function NavDesktop(props: Props) {
           <Link
             href={route.path}
             key={i}
-            className={`${
-              pathname === route.path && "text-accent border-b-2 border-accent"
-            } font-medium hover:text-accent transition-all`}
+            className={`${pathname === route.path && "font-bold"}`}
           >
             {route.name}
           </Link>

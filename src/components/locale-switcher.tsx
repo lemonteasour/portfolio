@@ -36,11 +36,11 @@ export default function LocaleSwitcher() {
   return (
     <div className="w-8 h-6">
       <button
-        className="absolute w-8 h-6 rounded-md hover:scale-120 active:scale-100 transition-all border border-neutral-800 dark:border-white bg-neutral-800 dark:bg-white"
+        className="absolute w-8 h-6 rounded-md hover:scale-120 active:scale-100 transition-all border bg-neutral-800 dark:bg-white"
         onClick={toggleLocale}
       >
         <Image
-          className="rounded-[5px]"
+          className="rounded-[6px]"
           src={`/flags/flag_${locale}.svg`}
           alt="Locale flag"
           fill
