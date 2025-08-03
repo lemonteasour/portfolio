@@ -14,7 +14,7 @@ export default function Contact() {
 
   return (
     <div className="w-full max-w-screen-lg mx-auto py-6">
-      <div className="rounded-lg mt-20 p-6 md:p-8 bg-white dark:bg-neutral-800">
+      <div className="rounded-lg mt-20 p-6 md:p-8 bg-card">
         <h1 className="text-3xl font-bold my-4 text-center">{t("title")}</h1>
         <p className="text-center">{t("subtitle")}</p>
         <div className="flex flex-row mt-6 justify-center gap-4">

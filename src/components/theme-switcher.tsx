@@ -20,7 +20,7 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      className="w-8 flex items-center justify-center hover:scale-120 active:scale-100 transition-all text-neutral-800 dark:text-white"
+      className="w-8 flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
       onClick={toggleTheme}
     >
       {theme === "light" ? <LuSun size={20} /> : <LuMoon size={20} />}

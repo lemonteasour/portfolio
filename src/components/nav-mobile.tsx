@@ -32,14 +32,17 @@ export default function NavMobile(props: Props) {
           >
             {/* Background shade */}
           </div>
-          <div className="fixed w-2/3 h-full z-40 top-0 left-0 flex flex-col gap-8 p-12 bg-white dark:bg-neutral-800">
+          <div className="fixed w-2/3 h-full z-40 top-0 left-0 flex flex-col gap-8 p-12 bg-popover">
             {routes.map((link, index) => {
               return (
                 <div key={index}>
                   <Link
                     onClick={toggleMenu}
                     href={link.path}
-                    className={`${pathname === link.path && "font-bold"}`}
+                    className={`${
+                      pathname === link.path &&
+                      "font-bold border-b-2 border-foreground"
+                    }`}
                   >
                     {link.name}
                   </Link>
