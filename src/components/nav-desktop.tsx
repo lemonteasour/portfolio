@@ -23,7 +23,7 @@ export default function NavDesktop(props: Props) {
             className={`${
               pathname === route.path &&
               "font-bold border-b-2 border-foreground"
-            }`}
+            } transition-all`}
           >
             {route.name}
           </Link>
