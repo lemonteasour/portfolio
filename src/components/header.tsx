@@ -41,7 +41,7 @@ export default function Header() {
           </Link>
         </div>
 
-        <div className="flex gap-6">
+        <div className="flex gap-6 items-center">
           {/* Desktop nav */}
           <div className="hidden md:flex">
             <NavDesktop routes={translatedRoutes} />
