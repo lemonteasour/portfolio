@@ -6,12 +6,24 @@ import { usePathname } from "next/navigation";
 import { LuMenu } from "react-icons/lu";
 
 import type { Route } from "@/constants/routes";
+
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+
+import { cn } from "@/lib/utils";
+
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 type Props = {
@@ -24,29 +36,38 @@ export default function NavMobile(props: Props) {
 
   return (
     <Sheet>
-      <SheetTrigger className="flex justify-center items-center">
+      <SheetTrigger>
         <LuMenu size={28} />
       </SheetTrigger>
-      <SheetContent side="left" className="flex flex-col">
+      <SheetContent side="left" className="flex items-center">
         <VisuallyHidden>
           <SheetTitle>Navigation</SheetTitle>
         </VisuallyHidden>
-        <nav className="flex flex-col justify-center items-center gap-8 p-20">
-          {routes.map((link, index) => {
-            return (
-              <Link
-                href={link.path}
-                key={index}
-                className={`${
-                  pathname === link.path &&
-                  "font-bold border-b-2 border-foreground"
-                } hover:text-accent transition-all`}
-              >
-                {link.name}
-              </Link>
-            );
-          })}
-        </nav>
+        <NavigationMenu
+          orientation="vertical"
+          viewport={false}
+          className="items-start mt-20"
+        >
+          <NavigationMenuList className="flex-col gap-6">
+            {routes.map((route, i) => {
+              return (
+                <NavigationMenuItem key={i}>
+                  <NavigationMenuLink
+                    asChild
+                    className={cn(
+                      navigationMenuTriggerStyle(),
+                      `text-base ${pathname === route.path && "font-bold"}`
+                    )}
+                  >
+                    <SheetClose asChild>
+                      <Link href={route.path}>{route.name}</Link>
+                    </SheetClose>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              );
+            })}
+          </NavigationMenuList>
+        </NavigationMenu>
       </SheetContent>
     </Sheet>
   );
