@@ -26,7 +26,7 @@ export default function Contact() {
           </Link>
 
           <Link
-            href="https://linkedin.com/in/jayhuich"
+            href="https://linkedin.com/in/lemonteasour"
             target="_blank"
             className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
           >
@@ -34,7 +34,7 @@ export default function Contact() {
           </Link>
 
           <Link
-            href="https://github.com/jayhuich"
+            href="https://github.com/lemonteasour"
             target="_blank"
             className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
           >
@@ -42,7 +42,7 @@ export default function Contact() {
           </Link>
 
           <Link
-            href="https://discordapp.com/users/jayhuich"
+            href="https://discordapp.com/users/lemonteasour"
             target="_blank"
             className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
           >
@@ -50,7 +50,7 @@ export default function Contact() {
           </Link>
 
           <Link
-            href="https://instagram.com/jayhuich"
+            href="https://instagram.com/lemonteasour"
             target="_blank"
             className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
           >
@@ -58,7 +58,7 @@ export default function Contact() {
           </Link>
 
           <Link
-            href="https://www.youtube.com/@jayhuich"
+            href="https://www.youtube.com/@lemonteasour"
             target="_blank"
             className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
           >
