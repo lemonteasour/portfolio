@@ -32,8 +32,8 @@ export default function NavDesktop(props: Props) {
                 asChild
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  `text-base bg-popover ${
-                    pathname === route.path && "font-bold"
+                  `mx-1 p-2 bg-popover text-muted-foreground hover:scale-110 active:scale-100 transition-all ${
+                    pathname === route.path && "text-accent-foreground"
                   }`
                 )}
               >

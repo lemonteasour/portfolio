@@ -56,7 +56,9 @@ export default function NavMobile(props: Props) {
                     asChild
                     className={cn(
                       navigationMenuTriggerStyle(),
-                      `text-base ${pathname === route.path && "font-bold"}`
+                      `text-base text-muted-foreground ${
+                        pathname === route.path && "text-accent-foreground"
+                      }`
                     )}
                   >
                     <SheetClose asChild>
