@@ -5,6 +5,15 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
 export default function LocaleSwitcher() {
   const [locale, setLocale] = useState<Locale>("en");
   const router = useRouter();
@@ -14,9 +23,6 @@ export default function LocaleSwitcher() {
     document.cookie = `LOCALE=${newLocale};`;
     router.refresh();
   };
-
-  const toggleLocale = () =>
-    changeLocale(locale === "en" ? "ja" : locale === "ja" ? "zh-HK" : "en");
 
   useEffect(() => {
     const cookieLocale = document.cookie
@@ -35,19 +41,32 @@ export default function LocaleSwitcher() {
 
   return (
     <div className="w-8 h-6">
-      <button
-        className="absolute w-8 h-6 rounded-md hover:scale-120 active:scale-100 transition-all border-2"
-        onClick={toggleLocale}
-      >
-        <Image
-          className="rounded-[6px]"
-          src={`/flags/flag_${locale}.svg`}
-          alt="Locale flag"
-          fill
-          style={{ objectFit: "cover" }}
-          priority
-        />
-      </button>
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button
+            variant="default"
+            className="absolute w-8 h-6 rounded-md hover:scale-120 active:scale-100 transition-all border-2"
+          >
+            <Image
+              className="rounded-[6px]"
+              src={`/flags/flag_${locale}.svg`}
+              alt="Locale flag"
+              fill
+              style={{ objectFit: "cover" }}
+              priority
+            />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent>
+          <DropdownMenuRadioGroup value={locale} onValueChange={changeLocale}>
+            <DropdownMenuRadioItem value="en">English</DropdownMenuRadioItem>
+            <DropdownMenuRadioItem value="ja">日本語</DropdownMenuRadioItem>
+            <DropdownMenuRadioItem value="zh-HK">
+              繁體中文
+            </DropdownMenuRadioItem>
+          </DropdownMenuRadioGroup>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </div>
   );
 }
