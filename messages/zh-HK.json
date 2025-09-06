@@ -100,5 +100,34 @@
     "contact": {
         "title": "隨時聯絡我！",
         "subtitle": "想談專案、音樂、旅行，或單純打個招呼都很歡迎～"
+    },
+    "projects": {
+        "recipenotes": {
+            "title": "Recipe Notes",
+            "privacy": {
+                "title": "Privacy Policy for Recipe Notes",
+                "subtitle": "Last updated: September 6, 2025",
+                "content": {
+                    "intro": "Recipe Notes respects your privacy. This Privacy Policy explains how your information is collected, used, and protected when you use our application.",
+                    "data": {
+                        "title": "Data Collection and Usage",
+                        "collection": "We do not collect any personal data from users. All recipes and notes are stored locally on your device.",
+                        "usage": "We do not track or monitor your usage of the app. All data remains private and is not shared with any third parties."
+                    },
+                    "advertising": {
+                        "title": "Advertising",
+                        "description": "In the future, Recipe Notes may include an optional feature where you can choose to watch ads to support the app.",
+                        "info": "If you choose to watch an ad, the ad provider (e.g., Google AdMob) may collect certain non-personal information such as device identifiers, interaction with the ad, or approximate location.",
+                        "handling": "This information is handled by the ad provider and not stored or controlled by Recipe Notes."
+                    },
+                    "analytics": {
+                        "title": "Analytics",
+                        "description": "We do not use any analytics or tracking tools beyond what is necessary to deliver ads (if you choose to watch them)."
+                    },
+                    "changes": "This Privacy Policy may be updated from time to time.",
+                    "contact": "If you have any questions about this Privacy Policy, please feel free to reach out."
+                }
+            }
+        }
     }
 }
