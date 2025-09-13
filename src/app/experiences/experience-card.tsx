@@ -45,7 +45,7 @@ export default function ExperienceCard(props: Props) {
   };
 
   return (
-    <div className="flex flex-col gap-4 my-6 p-6 md:p-8 rounded-lg bg-card">
+    <div className="flex flex-col gap-4 my-6 p-6 md:p-8 rounded-lg bg-card hover:scale-102 transition-all">
       <div className="flex flex-col md:flex-row justify-between gap-2">
         <div className="flex flex-col">
           <h3 className="text-lg font-semibold">{t("name")}</h3>
