@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="w-full fixed flex justify-between items-center px-6 md:px-12 py-6 z-20 border-b-2 bg-popover">
+      <div className="w-full fixed flex justify-between items-center px-6 md:px-12 py-4 z-20 border-b-2 bg-popover">
         <div className="flex gap-8">
           {/* Mobile nav */}
           <div className="md:hidden my-auto">
