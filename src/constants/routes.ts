@@ -12,10 +12,10 @@ export const routes: Route[] = [
     name: "experiences",
     path: "/experiences",
   },
-  //   {
-  //     name: "projects",
-  //     path: "/projects",
-  //   },
+  // {
+  //   name: "projects",
+  //   path: "/projects",
+  // },
   //   {
   //     name: "blog",
   //     path: "/blog",
@@ -25,3 +25,11 @@ export const routes: Route[] = [
     path: "/contact",
   },
 ];
+
+export const isActiveRoute = (route: Route, pathname: string) => {
+  if (route.path === "/") {
+    return pathname === route.path;
+  } else {
+    return pathname.startsWith(route.path);
+  }
+};

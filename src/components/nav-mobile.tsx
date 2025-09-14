@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 import { LuMenu } from "react-icons/lu";
 
-import type { Route } from "@/constants/routes";
+import { isActiveRoute, type Route } from "@/constants/routes";
 
 import {
   NavigationMenu,
@@ -57,7 +57,8 @@ export default function NavMobile(props: Props) {
                     className={cn(
                       navigationMenuTriggerStyle(),
                       `text-base text-muted-foreground ${
-                        pathname === route.path && "text-accent-foreground"
+                        isActiveRoute(route, pathname) &&
+                        "text-accent-foreground"
                       }`
                     )}
                   >

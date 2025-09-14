@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import type { Route } from "@/constants/routes";
+import { isActiveRoute, type Route } from "@/constants/routes";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -33,7 +33,7 @@ export default function NavDesktop(props: Props) {
                 className={cn(
                   navigationMenuTriggerStyle(),
                   `mx-1 p-2 bg-popover text-muted-foreground hover:scale-110 active:scale-100 transition-all ${
-                    pathname === route.path && "text-accent-foreground"
+                    isActiveRoute(route, pathname) && "text-accent-foreground"
                   }`
                 )}
               >
