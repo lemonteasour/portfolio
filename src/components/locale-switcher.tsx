@@ -45,7 +45,7 @@ export default function LocaleSwitcher() {
         <DropdownMenuTrigger asChild>
           <Button
             variant="default"
-            className="absolute w-8 h-6 rounded-md hover:scale-120 active:scale-100 transition-all border-2"
+            className="absolute w-8 h-6 rounded-md hover:scale-110 active:scale-100 transition-all border-2"
           >
             <Image
               className="rounded-[6px]"

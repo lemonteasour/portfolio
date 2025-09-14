@@ -26,7 +26,7 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="hover:scale-120 active:scale-100 transition-all"
+            className="hover:scale-110 active:scale-100 transition-all"
           >
             <div className="relative size-[45px] mx-auto flex justify-center items-center inset-x-0 z-0 rounded-full bg-border">
               <Image

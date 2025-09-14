@@ -20,7 +20,7 @@ export default function Contact() {
         <div className="flex flex-row mt-6 justify-center gap-4">
           <Link
             href="mailto:jayhuich@gmail.com"
-            className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
+            className="flex items-center justify-center hover:scale-110 active:scale-100 transition-all"
           >
             <LuMail size={30} />
           </Link>
@@ -28,7 +28,7 @@ export default function Contact() {
           <Link
             href="https://linkedin.com/in/lemonteasour"
             target="_blank"
-            className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
+            className="flex items-center justify-center hover:scale-110 active:scale-100 transition-all"
           >
             <LuLinkedin size={30} />
           </Link>
@@ -36,7 +36,7 @@ export default function Contact() {
           <Link
             href="https://github.com/lemonteasour"
             target="_blank"
-            className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
+            className="flex items-center justify-center hover:scale-110 active:scale-100 transition-all"
           >
             <LuGithub size={30} />
           </Link>
@@ -44,7 +44,7 @@ export default function Contact() {
           <Link
             href="https://discordapp.com/users/lemonteasour"
             target="_blank"
-            className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
+            className="flex items-center justify-center hover:scale-110 active:scale-100 transition-all"
           >
             <RiDiscordLine size={30} />
           </Link>
@@ -52,7 +52,7 @@ export default function Contact() {
           <Link
             href="https://instagram.com/lemonteasour"
             target="_blank"
-            className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
+            className="flex items-center justify-center hover:scale-110 active:scale-100 transition-all"
           >
             <LuInstagram size={30} />
           </Link>
@@ -60,7 +60,7 @@ export default function Contact() {
           <Link
             href="https://www.youtube.com/@lemonteasour"
             target="_blank"
-            className="flex items-center justify-center hover:scale-120 active:scale-100 transition-all"
+            className="flex items-center justify-center hover:scale-110 active:scale-100 transition-all"
           >
             <LuYoutube size={30} />
           </Link>
