@@ -20,7 +20,7 @@ export default function LocaleSwitcher() {
 
   const changeLocale = (newLocale: Locale) => {
     setLocale(newLocale);
-    document.cookie = `LOCALE=${newLocale};`;
+    document.cookie = `LOCALE=${newLocale}; path=/;`;
     router.refresh();
   };
 
@@ -34,7 +34,7 @@ export default function LocaleSwitcher() {
     } else {
       const browserLocale = navigator.language.slice(0, 2);
       setLocale(browserLocale);
-      document.cookie = `LOCALE=${browserLocale};`;
+      document.cookie = `LOCALE=${browserLocale}; path=/;`;
       router.refresh();
     }
   }, [router]);
