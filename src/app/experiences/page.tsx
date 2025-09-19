@@ -7,7 +7,9 @@ export default function Experiences() {
 
   return (
     <div className="w-full max-w-screen-lg mx-auto py-6">
-      <h1 className="text-3xl font-bold my-4 text-center">{t("title")}</h1>
+      <h1 className="text-3xl font-bold my-4 text-center text-accent-foreground">
+        {t("title")}
+      </h1>
       <h2 className="text-xl font-bold mt-8">{t("fulltime.title")}</h2>
 
       <ExperienceCard

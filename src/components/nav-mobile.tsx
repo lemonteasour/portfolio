@@ -37,7 +37,7 @@ export default function NavMobile(props: Props) {
   return (
     <Sheet>
       <SheetTrigger>
-        <LuMenu size={28} />
+        <LuMenu size={24} />
       </SheetTrigger>
       <SheetContent side="left" className="flex items-center">
         <VisuallyHidden>

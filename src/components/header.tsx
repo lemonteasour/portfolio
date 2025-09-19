@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="w-full fixed flex justify-between items-center px-6 md:px-12 py-4 z-20 border-b-2 bg-popover">
+      <div className="w-full fixed flex justify-between items-center px-6 md:px-12 py-4 z-20 border-b-2 bg-popover border-primary">
         <div className="flex gap-8">
           {/* Mobile nav */}
           <div className="md:hidden my-auto">
@@ -28,7 +28,7 @@ export default function Header() {
             href="/"
             className="hover:scale-110 active:scale-100 transition-all"
           >
-            <div className="relative size-[45px] mx-auto flex justify-center items-center inset-x-0 z-0 rounded-full bg-border">
+            <div className="relative size-[45px] mx-auto flex justify-center items-center inset-x-0 z-0 rounded-full bg-primary">
               <Image
                 className="rounded-full"
                 src="/logo.png"
