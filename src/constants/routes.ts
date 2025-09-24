@@ -12,10 +12,10 @@ export const routes: Route[] = [
     name: "experiences",
     path: "/experiences",
   },
-  // {
-  //   name: "projects",
-  //   path: "/projects",
-  // },
+  {
+    name: "projects",
+    path: "/projects",
+  },
   //   {
   //     name: "blog",
   //     path: "/blog",

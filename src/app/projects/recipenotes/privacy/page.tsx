@@ -7,7 +7,9 @@ export default function RecipeNotesPrivacy() {
     <div className="w-full max-w-screen-lg mx-auto py-6">
       <div className="flex flex-col rounded-lg mt-20 p-6 md:p-8 bg-card gap-8">
         <div className="flex flex-col gap-4">
-          <h1 className="text-center text-3xl font-bold">{t("title")}</h1>
+          <h1 className="text-center text-3xl font-bold text-accent-foreground">
+            {t("title")}
+          </h1>
           <p className="text-center text-muted-foreground">{t("subtitle")}</p>
           <p>{t("content.intro")}</p>
         </div>

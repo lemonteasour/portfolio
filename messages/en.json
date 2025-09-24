@@ -2,6 +2,7 @@
     "navigation": {
         "home": "Home",
         "experiences": "Experiences",
+        "projects": "Projects",
         "contact": "Contact"
     },
     "home": {
@@ -102,8 +103,11 @@
         "subtitle": "Whether you want to talk about projects, music, travel, or just say hi - I'd love to hear from you!"
     },
     "projects": {
+        "title": "Side Projects",
+        "subtitle": "A mix of little apps, experiments, and ideas I've brought to life — side projects that keep me learning and having fun.",
         "recipenotes": {
             "title": "Recipe Notes",
+            "subtitle": "A simple and modern iOS app for organizing cooking recipes.",
             "privacy": {
                 "title": "Privacy Policy for Recipe Notes",
                 "subtitle": "Last updated: September 6, 2025",
@@ -128,6 +132,10 @@
                     "contact": "If you have any questions about this Privacy Policy, please feel free to reach out."
                 }
             }
+        },
+        "portfolio": {
+            "title": "Portfolio Website",
+            "subtitle": "This very website you're on right now! Built with Next.js and Tailwind CSS."
         }
     }
 }

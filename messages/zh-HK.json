@@ -2,6 +2,7 @@
     "navigation": {
         "home": "主頁",
         "experiences": "職歷",
+        "projects": "個人專案",
         "contact": "聯繫"
     },
     "home": {
@@ -102,32 +103,39 @@
         "subtitle": "想談專案、音樂、旅行，或單純打個招呼都很歡迎～"
     },
     "projects": {
+        "title": "個人專案",
+        "subtitle": "一些我做過的小應用、實驗和靈感實現 —— 讓我在學習中保持樂趣的個人專案合集。",
         "recipenotes": {
             "title": "Recipe Notes",
+            "subtitle": "一款簡單現代的 iOS 烹飪食譜整理應用程式。",
             "privacy": {
-                "title": "Privacy Policy for Recipe Notes",
-                "subtitle": "Last updated: September 6, 2025",
+                "title": "Recipe Notes 私隱政策",
+                "subtitle": "最後更新日期：2025年9月6日",
                 "content": {
-                    "intro": "Recipe Notes respects your privacy. This Privacy Policy explains how your information is collected, used, and protected when you use our application.",
+                    "intro": "Recipe Notes 尊重您的私隱。本私隱政策說明了當您使用本應用時，您的資訊是如何被收集、使用和保護的。",
                     "data": {
-                        "title": "Data Collection and Usage",
-                        "collection": "We do not collect any personal data from users. All recipes and notes are stored locally on your device.",
-                        "usage": "We do not track or monitor your usage of the app. All data remains private and is not shared with any third parties."
+                        "title": "資料收集與使用",
+                        "collection": "我不會收集任何使用者的個人資料。所有食譜和筆記都僅儲存在您的裝置本地。",
+                        "usage": "Recipe Notes 不會追蹤或監控您在應用中的使用情況。所有資料保持私密，不會與任何第三方分享。"
                     },
                     "advertising": {
-                        "title": "Advertising",
-                        "description": "In the future, Recipe Notes may include an optional feature where you can choose to watch ads to support the app.",
-                        "info": "If you choose to watch an ad, the ad provider (e.g., Google AdMob) may collect certain non-personal information such as device identifiers, interaction with the ad, or approximate location.",
-                        "handling": "This information is handled by the ad provider and not stored or controlled by Recipe Notes."
+                        "title": "廣告",
+                        "description": "Recipe Notes 可能會在未來提供一個可選功能，允許您透過觀看廣告來支持應用。",
+                        "info": "如果您選擇觀看廣告，廣告提供商（例如 Google AdMob）可能會收集某些非個人資訊，例如裝置識別碼、與廣告的互動情況或大致位置資訊。",
+                        "handling": "這些資訊由廣告提供商處理，Recipe Notes 不會儲存或控制這些資料。"
                     },
                     "analytics": {
-                        "title": "Analytics",
-                        "description": "We do not use any analytics or tracking tools beyond what is necessary to deliver ads (if you choose to watch them)."
+                        "title": "分析工具",
+                        "description": "除非您選擇觀看廣告所需，Recipe Notes 不會使用任何分析或追蹤工具。"
                     },
-                    "changes": "This Privacy Policy may be updated from time to time.",
-                    "contact": "If you have any questions about this Privacy Policy, please feel free to reach out."
+                    "changes": "本私隱政策可能會不時更新。",
+                    "contact": "如果您對本私隱政策有任何疑問，請隨時與我聯繫。"
                 }
             }
+        },
+        "portfolio": {
+            "title": "個人網站",
+            "subtitle": "這就是您現在正在瀏覽的網站！使用 Next.js 和 Tailwind CSS 建立。"
         }
     }
 }
