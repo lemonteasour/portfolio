@@ -7,13 +7,20 @@ import { type Route, routes } from "@/constants/routes";
 import LocaleSwitcher from "@/components/locale-switcher";
 import ThemeSwitcher from "@/components/theme-switcher";
 import Image from "next/image";
+import Breadcrumbs from "./breadcrumbs";
 
 export default function Header() {
   const t = useTranslations("navigation");
 
-  const translatedRoutes: Route[] = routes.map((route) => {
-    return { ...route, name: t(route.name) };
-  });
+  const translateRoutes = (routes: Route[]): Route[] => {
+    return routes.map((route) => ({
+      ...route,
+      name: t(route.name),
+      children: route.children ? translateRoutes(route.children) : undefined,
+    }));
+  };
+
+  const translatedRoutes = translateRoutes(routes);
 
   return (
     <header>
@@ -56,6 +63,9 @@ export default function Header() {
         </div>
       </div>
       <div className="h-24"></div>
+      <div className="hidden md:flex px-6 md:px-12">
+        <Breadcrumbs routes={translatedRoutes} />
+      </div>
     </header>
   );
 }
