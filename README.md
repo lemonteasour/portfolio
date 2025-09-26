@@ -7,7 +7,7 @@ This website serves as a central hub to display my skills, projects, and backgro
 
 I even bought a domain for this, go check it out!
 
-➡️ [lemonteasour.com](http://www.lemonteasour.com/) ⬅️
+👉 [lemonteasour.com](http://www.lemonteasour.com/) 👈
 
 ## ✨ Features
 
@@ -25,9 +25,9 @@ I even bought a domain for this, go check it out!
 - **Deployment:** Vercel
 - **Other Tools/Libraries:** Git, npm, ESLint
 
-## 🚀 Getting started
+## 🚀 Local Development
 
-_(If you want to host this locally...?)_
+If you'd like to explore the codebase or run this project locally, here's how:
 
 ### Prerequisites
 
@@ -37,7 +37,7 @@ _(If you want to host this locally...?)_
 ### Installation
 
 ```bash
-git clone git@github.com:lemonteasour/portfolio.git
+git clone https://github.com/lemonteasour/portfolio.git
 cd portfolio
 npm install
 npm run dev
