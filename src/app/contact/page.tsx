@@ -21,7 +21,7 @@ export default function Contact() {
         <p className="text-center">{t("subtitle")}</p>
         <div className="flex flex-row mt-6 justify-center gap-4">
           <Link
-            href="mailto:jayhuich@gmail.com"
+            href="mailto:mail@lemonteasour.com"
             className="flex items-center justify-center hover:scale-110 active:scale-100 transition-all"
           >
             <LuMail size={30} />
