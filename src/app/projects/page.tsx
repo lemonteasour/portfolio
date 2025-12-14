@@ -5,7 +5,7 @@ export default function Projects() {
   const t = useTranslations("projects");
 
   return (
-    <div className="w-full max-w-screen-lg mx-auto py-6">
+    <div className="w-full max-w-5xl mx-auto py-6">
       <h1 className="text-3xl font-bold my-4 text-center text-accent-foreground">
         {t("title")}
       </h1>

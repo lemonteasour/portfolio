@@ -13,7 +13,7 @@ export default function Contact() {
   const t = useTranslations("contact");
 
   return (
-    <div className="w-full max-w-screen-lg mx-auto py-6">
+    <div className="w-full max-w-5xl mx-auto py-6">
       <div className="rounded-lg mt-20 p-6 md:p-8 bg-card">
         <h1 className="text-3xl font-bold my-4 text-center text-accent-foreground">
           {t("title")}

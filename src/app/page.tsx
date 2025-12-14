@@ -7,7 +7,7 @@ export default function Home() {
   const t = useTranslations("home");
 
   return (
-    <div className="w-full max-w-screen-lg mx-auto py-6">
+    <div className="w-full max-w-5xl mx-auto py-6">
       <div className="absolute size-[130px] mx-auto flex justify-center items-center inset-x-0 z-0 rounded-full bg-primary">
         <Image
           className="rounded-full"
