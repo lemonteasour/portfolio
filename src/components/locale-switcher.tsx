@@ -3,7 +3,7 @@
 import { Locale } from "next-intl";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -14,27 +14,37 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+const LOCALE_COOKIE = "LOCALE";
+
+function getLocaleFromCookie(): Locale {
+  return (
+    (document.cookie
+      .split("; ")
+      .find((row) => row.startsWith(`${LOCALE_COOKIE}=`))
+      ?.split("=")[1] as Locale | undefined) ?? "en"
+  );
+}
+
 export default function LocaleSwitcher() {
-  const [locale, setLocale] = useState<Locale>("en");
   const router = useRouter();
+  const locale = useSyncExternalStore(
+    () => () => {},
+    getLocaleFromCookie,
+    () => "en" as Locale
+  );
 
   const changeLocale = (newLocale: Locale) => {
-    setLocale(newLocale);
-    document.cookie = `LOCALE=${newLocale}; path=/;`;
+    document.cookie = `${LOCALE_COOKIE}=${newLocale}; path=/;`;
     router.refresh();
   };
 
   useEffect(() => {
-    const cookieLocale = document.cookie
+    const hasCookie = document.cookie
       .split("; ")
-      .find((row) => row.startsWith("LOCALE="))
-      ?.split("=")[1];
-    if (cookieLocale) {
-      setLocale(cookieLocale);
-    } else {
-      const browserLocale = navigator.language.slice(0, 2);
-      setLocale(browserLocale);
-      document.cookie = `LOCALE=${browserLocale}; path=/;`;
+      .some((row) => row.startsWith(`${LOCALE_COOKIE}=`));
+    if (!hasCookie) {
+      const browserLocale = navigator.language.slice(0, 2) as Locale;
+      document.cookie = `${LOCALE_COOKIE}=${browserLocale}; path=/;`;
       router.refresh();
     }
   }, [router]);

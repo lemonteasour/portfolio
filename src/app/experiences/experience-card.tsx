@@ -1,6 +1,42 @@
 import { useTranslations } from "next-intl";
 import ExperiencesLabels from "./labels";
 
+type SectionProps = {
+  t: ReturnType<typeof useTranslations>;
+  section?: string;
+  description: string[];
+  skills: string[];
+};
+
+function ExperienceCardSection({
+  t,
+  section,
+  description,
+  skills,
+}: SectionProps) {
+  return (
+    <div className="flex flex-col gap-2">
+      {section && <h4 className="font-semibold">{t(`${section}.title`)}</h4>}
+      <div className="flex flex-col md:flex-row justify-between gap-2 text-sm">
+        <ul className="flex flex-col md:w-5/6 xl:w-11/12 list-outside list-disc mx-2 md:mx-4">
+          {description.map((key) => (
+            <li className="my-0.5" key={`${section}${key}`}>
+              {t(`${section ? section + "." : ""}description.${key}`)}
+            </li>
+          ))}
+        </ul>
+        <ul className="flex flex-row md:flex-col md:w-1/6 xl:w-1/12 list-outside md:list-disc mx-auto md:mx-4 divide-x md:divide-x-0 text-muted-foreground">
+          {skills.map((key) => (
+            <li className="text-xs px-2 md:px-0 my-0.5" key={`${key}`}>
+              {key}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
 type Props = {
   expKey: string;
   description?: string[];
@@ -11,38 +47,6 @@ type Props = {
 export default function ExperienceCard(props: Props) {
   const { type, expKey, description, skills } = props;
   const t = useTranslations(`experiences.${type}.${expKey}`);
-
-  const ExperienceCardSection = ({
-    section,
-    description,
-    skills,
-  }: {
-    section?: string;
-    description: string[];
-    skills: string[];
-  }) => {
-    return (
-      <div className="flex flex-col gap-2">
-        {section && <h4 className="font-semibold">{t(`${section}.title`)}</h4>}
-        <div className="flex flex-col md:flex-row justify-between gap-2 text-sm">
-          <ul className="flex flex-col md:w-5/6 xl:w-11/12 list-outside list-disc mx-2 md:mx-4">
-            {description.map((key) => (
-              <li className="my-0.5" key={`${section}${key}`}>
-                {t(`${section ? section + "." : ""}description.${key}`)}
-              </li>
-            ))}
-          </ul>
-          <ul className="flex flex-row md:flex-col md:w-1/6 xl:w-1/12 list-outside md:list-disc mx-auto md:mx-4 divide-x md:divide-x-0 text-muted-foreground">
-            {skills.map((key) => (
-              <li className="text-xs px-2 md:px-0 my-0.5" key={`${key}`}>
-                {key}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    );
-  };
 
   return (
     <div className="flex flex-col gap-4 my-6 p-6 md:p-8 rounded-lg bg-card hover:scale-102 transition-all">
@@ -60,11 +64,13 @@ export default function ExperienceCard(props: Props) {
       {expKey === "rakuten" ? (
         <>
           <ExperienceCardSection
+            t={t}
             section="ios"
             description={ExperiencesLabels.fulltime.rakuten.ios.description}
             skills={ExperiencesLabels.fulltime.rakuten.ios.skills}
           />
           <ExperienceCardSection
+            t={t}
             section="ui"
             description={ExperiencesLabels.fulltime.rakuten.ui.description}
             skills={ExperiencesLabels.fulltime.rakuten.ui.skills}
@@ -72,6 +78,7 @@ export default function ExperienceCard(props: Props) {
         </>
       ) : (
         <ExperienceCardSection
+          t={t}
           description={description || []}
           skills={skills || []}
         />

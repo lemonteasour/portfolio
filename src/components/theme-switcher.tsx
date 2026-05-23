@@ -1,22 +1,27 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { LuMoon, LuSun } from "react-icons/lu";
+
+// useSyncExternalStore returns getServerSnapshot() on both server and during
+// hydration, so server and client agree on `false`. After hydration it
+// switches to getSnapshot() → true, triggering a single re-render.
+function useIsMounted() {
+  return useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  );
+}
 
 export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
-
-  useEffect(() => {
-    setMounted(true);
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) setTheme(savedTheme);
-  }, [setTheme]);
+  const mounted = useIsMounted();
 
   if (!mounted) return null;
+
+  const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
 
   return (
     <button
