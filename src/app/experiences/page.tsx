@@ -21,6 +21,7 @@ export default function Experiences() {
         expKey={ExperiencesLabels.fulltime.tomlee.name}
         description={ExperiencesLabels.fulltime.tomlee.description}
         skills={ExperiencesLabels.fulltime.tomlee.skills}
+        link={ExperiencesLabels.fulltime.tomlee.link}
         type={"fulltime"}
       />
 

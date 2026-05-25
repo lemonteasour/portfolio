@@ -40,17 +40,19 @@
                 "ios": {
                     "title": "iOS Team",
                     "description": {
-                        "tbu": "Recently transitioned into the iOS team, where I'm beginning to contribute to app development. More updates soon!"
+                        "app": "Developing and maintaining the Rakuten Travel iOS app, serving 300,000+ daily active users",
+                        "features": "Contributed to key features including booking flow, reviews feature, and an AI-powered smart filter",
+                        "ds": "Primary resource for design system adoption across front-end teams — advising developers and collaborating closely with designers on component usage and best practices",
+                        "swift": "Integrated REST APIs and applied MV State architecture with Swift concurrency"
                     }
                 },
-                "ui": {
-                    "title": "UI Team",
+                "web": {
+                    "title": "Web UI Team",
                     "description": {
-                        "inbound": "Worked as a front-end web developer for the Rakuten Travel Inbound website",
-                        "ds": "Created a unified design system used across multiple applications",
-                        "rtl": "Led a project to convert outdated enzyme unit tests to React Testing Library",
-                        "release": "Participated in midnight operations and releases",
-                        "olt": "Performed load tests on the system to prepare for heavy server traffic"
+                        "inbound": "Worked on the Rakuten Travel inbound (now global) website as a front-end web developer",
+                        "rtl": "Led migration of enzyme unit tests to React Testing Library",
+                        "release": "Participated in midnight release operations and production deployments",
+                        "olt": "Performed load testing to prepare the system for high-traffic periods"
                     }
                 }
             },

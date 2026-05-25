@@ -3,18 +3,21 @@ const ExperiencesLabels = {
     rakuten: {
       name: "rakuten",
       ios: {
-        description: ["tbu"],
-        skills: ["Swift", "SwiftUI"],
+        description: ["app", "features", "ds", "swift"],
+        skills: ["Swift", "SwiftUI", "UIKit"],
+        link: "https://apps.apple.com/jp/app/id300815151",
       },
-      ui: {
-        description: ["inbound", "ds", "rtl", "release", "olt"],
+      web: {
+        description: ["inbound", "rtl", "release", "olt"],
         skills: ["TypeScript", "React", "Redux", "Node.js"],
+        link: "https://travel.rakuten.com",
       },
     },
     tomlee: {
       name: "tomlee",
       description: ["website", "server", "adhoc"],
       skills: ["HTML", "CSS", "PHP", "SQL Server", "Liquid"],
+      link: "https://www.tomleemusic.com.hk",
     },
   },
   intern: {

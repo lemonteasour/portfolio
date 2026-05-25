@@ -1,4 +1,6 @@
+import { Suspense } from "react";
 import { useTranslations } from "next-intl";
+import LinkPreview from "@/components/link-preview";
 import ExperiencesLabels from "./labels";
 
 type SectionProps = {
@@ -6,6 +8,7 @@ type SectionProps = {
   section?: string;
   description: string[];
   skills: string[];
+  link?: string;
 };
 
 function ExperienceCardSection({
@@ -13,6 +16,7 @@ function ExperienceCardSection({
   section,
   description,
   skills,
+  link,
 }: SectionProps) {
   return (
     <div className="flex flex-col gap-2">
@@ -33,6 +37,11 @@ function ExperienceCardSection({
           ))}
         </ul>
       </div>
+      {link && (
+        <Suspense fallback={null}>
+          <LinkPreview url={link} />
+        </Suspense>
+      )}
     </div>
   );
 }
@@ -41,11 +50,12 @@ type Props = {
   expKey: string;
   description?: string[];
   skills?: string[];
+  link?: string;
   type: string;
 };
 
 export default function ExperienceCard(props: Props) {
-  const { type, expKey, description, skills } = props;
+  const { type, expKey, description, skills, link } = props;
   const t = useTranslations(`experiences.${type}.${expKey}`);
 
   return (
@@ -68,12 +78,14 @@ export default function ExperienceCard(props: Props) {
             section="ios"
             description={ExperiencesLabels.fulltime.rakuten.ios.description}
             skills={ExperiencesLabels.fulltime.rakuten.ios.skills}
+            link={ExperiencesLabels.fulltime.rakuten.ios.link}
           />
           <ExperienceCardSection
             t={t}
-            section="ui"
-            description={ExperiencesLabels.fulltime.rakuten.ui.description}
-            skills={ExperiencesLabels.fulltime.rakuten.ui.skills}
+            section="web"
+            description={ExperiencesLabels.fulltime.rakuten.web.description}
+            skills={ExperiencesLabels.fulltime.rakuten.web.skills}
+            link={ExperiencesLabels.fulltime.rakuten.web.link}
           />
         </>
       ) : (
@@ -81,6 +93,7 @@ export default function ExperienceCard(props: Props) {
           t={t}
           description={description || []}
           skills={skills || []}
+          link={link}
         />
       )}
     </div>
