@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
-export default function RecipeNotesPrivacy() {
-  const t = useTranslations("projects.recipenotes.privacy");
+export default function RecipeBBPrivacy() {
+  const t = useTranslations("projects.recipebb.privacy");
 
   return (
     <div className="w-full max-w-5xl mx-auto py-6">

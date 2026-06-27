@@ -10,7 +10,7 @@ export default function Projects() {
         {t("title")}
       </h1>
       <h2 className="mt-8 text-center">{t("subtitle")}</h2>
-      <ProjectCard project={"recipenotes"} />
+      <ProjectCard project={"recipebb"} />
       <ProjectCard project={"portfolio"} />
     </div>
   );

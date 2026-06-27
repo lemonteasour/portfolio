@@ -3,7 +3,7 @@
         "home": "Home",
         "experiences": "Experiences",
         "projects": "Projects",
-        "recipenotes": "Recipe Notes",
+        "recipebb": "RecipeBB",
         "privacy": "Privacy Policy",
         "contact": "Contact"
     },
@@ -109,24 +109,24 @@
     "projects": {
         "title": "Side Projects",
         "subtitle": "A mix of little apps, experiments, and ideas I've brought to life — side projects that keep me learning and having fun.",
-        "recipenotes": {
-            "title": "Recipe Notes",
+        "recipebb": {
+            "title": "RecipeBB",
             "subtitle": "A simple and modern iOS app for organizing cooking recipes.",
             "privacy": {
-                "title": "Privacy Policy for Recipe Notes",
-                "subtitle": "Last updated: September 6, 2025",
+                "title": "Privacy Policy for RecipeBB",
+                "subtitle": "Last updated: June 27, 2026",
                 "content": {
-                    "intro": "Recipe Notes respects your privacy. This Privacy Policy explains how your information is collected, used, and protected when you use our application.",
+                    "intro": "RecipeBB respects your privacy. This Privacy Policy explains how your information is collected, used, and protected when you use our application.",
                     "data": {
                         "title": "Data Collection and Usage",
-                        "collection": "We do not collect any personal data from users. All recipes and notes are stored locally on your device.",
+                        "collection": "We do not collect any personal data from users. All recipes and other information are stored locally on your device.",
                         "usage": "We do not track or monitor your usage of the app. All data remains private and is not shared with any third parties."
                     },
                     "advertising": {
                         "title": "Advertising",
-                        "description": "In the future, Recipe Notes may include an optional feature where you can choose to watch ads to support the app.",
+                        "description": "In the future, RecipeBB may include an optional feature where you can choose to watch ads to support the app.",
                         "info": "If you choose to watch an ad, the ad provider (e.g., Google AdMob) may collect certain non-personal information such as device identifiers, interaction with the ad, or approximate location.",
-                        "handling": "This information is handled by the ad provider and not stored or controlled by Recipe Notes."
+                        "handling": "This information is handled by the ad provider and not stored or controlled by RecipeBB."
                     },
                     "analytics": {
                         "title": "Analytics",

@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-export default function Projects() {
-  const t = useTranslations("projects.recipenotes");
+export default function RecipeBB() {
+  const t = useTranslations("projects.recipebb");
 
   return (
     <div className="w-full max-w-5xl mx-auto py-6">
@@ -12,9 +12,7 @@ export default function Projects() {
         </h1>
         <p className="text-center">{t("subtitle")}</p>
         <p className="text-center text-sm text-accent-foreground mt-2">
-          <Link href={`/projects/recipenotes/privacy`}>
-            {t("privacy.title")}
-          </Link>
+          <Link href={`/projects/recipebb/privacy`}>{t("privacy.title")}</Link>
         </p>
       </div>
     </div>

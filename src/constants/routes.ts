@@ -18,12 +18,12 @@ export const routes: Route[] = [
     path: "/projects",
     children: [
       {
-        name: "recipenotes",
-        path: "/projects/recipenotes",
+        name: "recipebb",
+        path: "/projects/recipebb",
         children: [
           {
             name: "privacy",
-            path: "/projects/recipenotes/privacy",
+            path: "/projects/recipebb/privacy",
           },
         ],
       },
